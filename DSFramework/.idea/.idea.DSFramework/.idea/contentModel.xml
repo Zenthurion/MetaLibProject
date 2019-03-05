@@ -4,6 +4,7 @@
     <e p="C:\Users\Markus\.Rider2018.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Markus\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_DSFramework.622262209.00" t="ExcludeRecursive" />
     <e p="F:\Users\Markus\Documents\Software Projects\Dwarven Software\DSFramework\DSFramework" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
@@ -40,6 +41,23 @@
             </e>
             <e p="ICappedCurrency.cs" t="Include" />
             <e p="ICurrency.cs" t="Include" />
+          </e>
+          <e p="Editor" t="Include">
+            <e p="Tests" t="Include">
+              <e p="Achievements" t="Include">
+                <e p="AchievementsTestClasses.cs" t="Include" />
+                <e p="CompositeAchievementTests.cs" t="Include" />
+                <e p="StatAchievementTests.cs" t="Include" />
+              </e>
+              <e p="Economy" t="Include">
+                <e p="CurrencyEventTests.cs" t="Include" />
+                <e p="CurrencyTests.cs" t="Include" />
+                <e p="RestrictiveCurrencyTests.cs" t="Include" />
+              </e>
+              <e p="Events" t="Include">
+                <e p="EventTests.cs" t="Include" />
+              </e>
+            </e>
           </e>
           <e p="Events" t="Include">
             <e p="DSEvents.cs" t="Include" />
