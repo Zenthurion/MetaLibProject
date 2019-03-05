@@ -2,38 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0ef058c-1554-47f3-8fa6-9eb1858c77b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/DSBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/DSBehaviour.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/DSData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ILoadable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ISaveDataBundle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ISaveDataBundle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ISaveable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SaveDataBundle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SaveDataBundle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/DSEvents.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/DSEventsGroup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/DSEventsGroup.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/IIEventsGroup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/IIEventsGroup.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Examples/SimpleStateExample.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/FSMBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/FSMBehaviour.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/FiniteStateMachine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/IFiniteStateMachine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/IFiniteStateMachine.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/SimpleState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/SimpleState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/State.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/DSUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/CappedCurrencyCapacity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/CappedCurrencyCapacity.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/DSCappedCurrency.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/DSCappedCurrency.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/DSCurrency.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/DSCurrency.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/DSEconomy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/DSEconomy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/Events.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/ICappedCurrency.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/ICappedCurrency.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/ICurrency.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/ICurrency.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,196 +27,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FiniteStateMachine.cs">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/DSCurrency.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+            <state relative-caret-position="210">
+              <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
               <folding>
-                <marker date="1551474869631" expanded="true" signature="48:1185" ph="{...}" />
-                <marker date="1551474869631" expanded="true" signature="108:1183" ph="{...}" />
-                <marker date="1551474869631" expanded="true" signature="239:292" ph="{...}" />
-                <marker date="1551474869631" expanded="true" signature="357:457" ph="{...}" />
-                <marker date="1551474869631" expanded="true" signature="502:545" ph="{...}" />
-                <marker date="1551474869631" expanded="true" signature="576:623" ph="{...}" />
-                <marker date="1551474869631" expanded="true" signature="659:711" ph="{...}" />
-                <marker date="1551474869631" expanded="true" signature="746:797" ph="{...}" />
-                <marker date="1551474869631" expanded="true" signature="848:947" ph="{...}" />
-                <marker date="1551474869631" expanded="true" signature="1002:1177" ph="{...}" />
+                <marker date="1551812310096" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551812310096" expanded="true" signature="97:1330" ph="{...}" />
+                <marker date="1551812310096" expanded="true" signature="139:1328" ph="{...}" />
+                <marker date="1551812310096" expanded="true" signature="210:282" ph="{...}" />
+                <marker date="1551812310096" expanded="true" signature="442:969" ph="{...}" />
+                <marker date="1551812310096" expanded="true" signature="480:636" ph="{...}" />
+                <marker date="1551812310096" expanded="true" signature="672:831" ph="{...}" />
+                <marker date="1551812310096" expanded="true" signature="1015:1322" ph="{...}" />
+                <marker date="1551812310096" expanded="true" signature="1053:1209" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-              <folding>
-                <marker date="1551470867394" expanded="true" signature="13:179" ph="{...}" />
-                <marker date="1551470867394" expanded="true" signature="43:177" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM/SimpleState.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-              <folding>
-                <marker date="1551472503621" expanded="true" signature="13:1193" ph="{...}" />
-                <marker date="1551472503621" expanded="true" signature="119:1191" ph="{...}" />
-                <marker date="1551472503621" expanded="true" signature="475:495" ph="{...}" />
-                <marker date="1551472503621" expanded="true" signature="542:630" ph="{...}" />
-                <marker date="1551472503621" expanded="true" signature="682:780" ph="{...}" />
-                <marker date="1551472503621" expanded="true" signature="831:927" ph="{...}" />
-                <marker date="1551472503621" expanded="true" signature="973:1059" ph="{...}" />
-                <marker date="1551472503621" expanded="true" signature="1101:1185" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FSMBehaviour.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-              <folding>
-                <marker date="1551475491632" expanded="true" signature="33:632" ph="{...}" />
-                <marker date="1551475491632" expanded="true" signature="81:630" ph="{...}" />
-                <marker date="1551475491632" expanded="true" signature="191:255" ph="{...}" />
-                <marker date="1551475491632" expanded="true" signature="285:343" ph="{...}" />
-                <marker date="1551475491632" expanded="true" signature="384:430" ph="{...}" />
-                <marker date="1551475491632" expanded="true" signature="477:528" ph="{...}" />
-                <marker date="1551475491632" expanded="true" signature="574:624" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM/State.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/DSCappedCurrency.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="615">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
               <folding>
-                <marker date="1551475844944" expanded="true" signature="28:1492" ph="{...}" />
-                <marker date="1551475844944" expanded="true" signature="71:1490" ph="{...}" />
-                <marker date="1551475844944" expanded="true" signature="109:167" ph="{...}" />
-                <marker date="1551475844944" expanded="true" signature="328:373" ph="{...}" />
-                <marker date="1551475844944" expanded="true" signature="419:439" ph="{...}" />
-                <marker date="1551475844944" expanded="true" signature="469:575" ph="{...}" />
-                <marker date="1551475844944" expanded="true" signature="626:646" ph="{...}" />
-                <marker date="1551475844944" expanded="true" signature="681:792" ph="{...}" />
-                <marker date="1551475844944" expanded="true" signature="842:862" ph="{...}" />
-                <marker date="1551475844944" expanded="true" signature="896:1006" ph="{...}" />
-                <marker date="1551475844944" expanded="true" signature="1051:1071" ph="{...}" />
-                <marker date="1551475844944" expanded="true" signature="1100:1248" ph="{...}" />
-                <marker date="1551475844944" expanded="true" signature="1289:1309" ph="{...}" />
-                <marker date="1551475844944" expanded="true" signature="1337:1484" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM/Examples/SimpleStateExample.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
-              <folding>
-                <marker date="1551800356643" expanded="true" signature="42:2201" ph="{...}" />
-                <marker date="1551800356643" expanded="true" signature="95:2199" ph="{...}" />
-                <marker date="1551800356643" expanded="true" signature="321:1361" ph="{...}" />
-                <marker date="1551800356643" expanded="true" signature="633:754" ph="{...}" />
-                <marker date="1551800356643" expanded="true" signature="883:1008" ph="{...}" />
-                <marker date="1551800356643" expanded="true" signature="1138:1261" ph="{...}" />
-                <marker date="1551800356643" expanded="true" signature="1395:1720" ph="{...}" />
-                <marker date="1551800356643" expanded="true" signature="1595:1683" ph="{...}" />
-                <marker date="1551800356643" expanded="true" signature="1756:2193" ph="{...}" />
-                <marker date="1551800356643" expanded="true" signature="1808:1913" ph="{...}" />
-                <marker date="1551800356643" expanded="true" signature="1962:2065" ph="{...}" />
-                <marker date="1551800356643" expanded="true" signature="2082:2183" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Events/DSEvents.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-              <folding>
-                <marker date="1551804189592" expanded="true" signature="6:66" ph="..." />
-                <marker date="1551804189592" expanded="true" signature="84:2993" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="122:134" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="191:2991" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="757:963" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="845:952" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="990:1084" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="1135:1435" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="1161:1329" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="1345:1425" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="1524:1802" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="1587:1715" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="1926:1988" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="2111:2185" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="2312:2377" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="2503:2580" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="2664:2828" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="2701:2780" ph="{...}" />
-                <marker date="1551804189592" expanded="true" signature="2924:2985" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Events/DSEventsGroup.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-              <folding>
-                <marker date="1551803033433" expanded="false" signature="6:47" ph="..." />
-                <marker date="1551803033433" expanded="true" signature="65:1617" ph="{...}" />
-                <marker date="1551803033433" expanded="true" signature="113:1615" ph="{...}" />
-                <marker date="1551803033433" expanded="true" signature="252:272" ph="{...}" />
-                <marker date="1551803033433" expanded="true" signature="356:835" ph="{...}" />
-                <marker date="1551803033433" expanded="true" signature="645:758" ph="{...}" />
-                <marker date="1551803033433" expanded="true" signature="922:1261" ph="{...}" />
-                <marker date="1551803033433" expanded="true" signature="1316:1609" ph="{...}" />
-                <marker date="1551803033433" expanded="true" signature="1353:1432" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Events/IIEventsGroup.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
-              <folding>
-                <marker date="1551803014984" expanded="true" signature="16:271" ph="{...}" />
-                <marker date="1551803014984" expanded="true" signature="52:269" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM/IFiniteStateMachine.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-              <folding>
-                <marker date="1551474670148" expanded="true" signature="13:307" ph="{...}" />
-                <marker date="1551474670148" expanded="true" signature="56:305" ph="{...}" />
+                <marker date="1551812547799" expanded="false" signature="6:64" ph="..." />
+                <marker date="1551812547799" expanded="true" signature="83:1176" ph="{...}" />
+                <marker date="1551812547799" expanded="true" signature="149:1174" ph="{...}" />
+                <marker date="1551812547799" expanded="true" signature="456:534" ph="{...}" />
+                <marker date="1551812547799" expanded="true" signature="581:795" ph="{...}" />
+                <marker date="1551812547799" expanded="true" signature="634:706" ph="{...}" />
+                <marker date="1551812547799" expanded="true" signature="723:785" ph="{...}" />
+                <marker date="1551812547799" expanded="true" signature="837:1168" ph="{...}" />
+                <marker date="1551812547799" expanded="true" signature="894:1033" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -245,22 +74,36 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/IFiniteStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/DSEventsGroup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/ILoadable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/SaveDataBundle.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/DSBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/DSEvents.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FiniteStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FSMBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/Examples/SimpleStateExample.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/DSUtils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../phoenix/Phoenix/Assets/DwarvenSoftware/Scripts/Utils/DSUtils.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/ISaveable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/DSData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/SimpleState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/DSCappedCurrency.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/IIEventsGroup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/CappedCurrencyCapacity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/ISaveDataBundle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/DSEventsGroup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/SaveDataBundle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/ICappedCurrency.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/DSBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/DSEvents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/DSCurrency.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FiniteStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FSMBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/DSUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/ICurrency.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CappedCurrencyUpgradeSuccessEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/ISaveable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CappedCurrencyUpgradeFailedEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/DSData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyAddedEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyChangedEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyInsufficientEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/SimpleState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/DSEconomy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CappedCurrencyUpgradeEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencySpentEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -292,6 +135,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Events/IIEventsGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Events/DSEventsGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Events/DSEvents.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/DSEconomy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/ICurrency.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/IRestrictedCurrency.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/RestrictedCurrencyCapacity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyAddedEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyChangedEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyInsufficientEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencySpentEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Events/RestrictedCurrencyUpgradeEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Events/RestrictedCurrencyUpgradeFailedEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Events/RestrictedCurrencyUpgradeSuccessEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/DSCurrency.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/DSRestrictedCurrency.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/DSCappedCurrency.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Events/CappedCurrencyUpgradeEvent.cs" />
       </list>
     </option>
   </component>
@@ -300,11 +159,10 @@
       <facet id="riderModule/invalid/Default Android Facet" />
     </ignored-facets>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -336,6 +194,19 @@
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
               <item name="Core" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Economy" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Economy" type="1045f7f1:UnityExplorerNode" />
+              <item name="Events" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -414,12 +285,12 @@
       <workItem from="1551120174734" duration="6678000" />
       <workItem from="1551200600736" duration="2058000" />
       <workItem from="1551443789957" duration="12097000" />
-      <workItem from="1551800184278" duration="2211000" />
+      <workItem from="1551800184278" duration="6824000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23044000" />
+    <option name="totallyTimeSpent" value="27657000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -431,10 +302,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12526652" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2571116" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -656,7 +527,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM/IFiniteStateMachine.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
+        <state relative-caret-position="150">
           <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
             <marker date="1551474670148" expanded="true" signature="13:307" ph="{...}" />
@@ -766,28 +637,214 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Events/DSEvents.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state relative-caret-position="28">
+          <caret line="20" column="79" lean-forward="true" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
           <folding>
-            <marker date="1551804189592" expanded="true" signature="6:66" ph="..." />
-            <marker date="1551804189592" expanded="true" signature="84:2993" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="122:134" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="191:2991" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="757:963" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="845:952" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="990:1084" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="1135:1435" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="1161:1329" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="1345:1425" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="1524:1802" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="1587:1715" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="1926:1988" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="2111:2185" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="2312:2377" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="2503:2580" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="2664:2828" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="2701:2780" ph="{...}" />
-            <marker date="1551804189592" expanded="true" signature="2924:2985" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="6:66" ph="..." />
+            <marker date="1551804199718" expanded="true" signature="84:3063" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="122:134" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="140:235" ph="/* Code based on gist by wmiller: ... */" />
+            <marker date="1551804199718" expanded="true" signature="261:3061" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="827:1033" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="915:1022" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="1060:1154" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="1205:1505" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="1231:1399" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="1415:1495" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="1594:1872" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="1657:1785" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="1996:2058" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="2181:2255" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="2382:2447" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="2573:2650" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="2734:2898" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="2771:2850" ph="{...}" />
+            <marker date="1551804199718" expanded="true" signature="2994:3055" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/DSEconomy.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <marker date="1551810525640" expanded="true" signature="6:47" ph="..." />
+            <marker date="1551810525640" expanded="true" signature="66:1164" ph="{...}" />
+            <marker date="1551810525640" expanded="true" signature="95:1162" ph="{...}" />
+            <marker date="1551810525640" expanded="true" signature="430:513" ph="{...}" />
+            <marker date="1551810525640" expanded="true" signature="566:836" ph="{...}" />
+            <marker date="1551810525640" expanded="true" signature="632:772" ph="{...}" />
+            <marker date="1551810525640" expanded="true" signature="892:1156" ph="{...}" />
+            <marker date="1551810525640" expanded="true" signature="959:1099" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/ICurrency.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <marker date="1551810626988" expanded="true" signature="17:188" ph="{...}" />
+            <marker date="1551810626988" expanded="true" signature="50:186" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/ICappedCurrency.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="5" />
+          <folding>
+            <marker date="1551812473759" expanded="true" signature="17:148" ph="{...}" />
+            <marker date="1551812473759" expanded="true" signature="68:146" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/CappedCurrencyCapacity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <marker date="1551812482915" expanded="true" signature="52:616" ph="{...}" />
+            <marker date="1551812482915" expanded="true" signature="94:614" ph="{...}" />
+            <marker date="1551812482915" expanded="true" signature="211:269" ph="{...}" />
+            <marker date="1551812482915" expanded="true" signature="369:389" ph="{...}" />
+            <marker date="1551812482915" expanded="true" signature="549:608" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/DSCappedCurrency.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+          <folding>
+            <marker date="1551812547799" expanded="false" signature="6:64" ph="..." />
+            <marker date="1551812547799" expanded="true" signature="83:1176" ph="{...}" />
+            <marker date="1551812547799" expanded="true" signature="149:1174" ph="{...}" />
+            <marker date="1551812547799" expanded="true" signature="456:534" ph="{...}" />
+            <marker date="1551812547799" expanded="true" signature="581:795" ph="{...}" />
+            <marker date="1551812547799" expanded="true" signature="634:706" ph="{...}" />
+            <marker date="1551812547799" expanded="true" signature="723:785" ph="{...}" />
+            <marker date="1551812547799" expanded="true" signature="837:1168" ph="{...}" />
+            <marker date="1551812547799" expanded="true" signature="894:1033" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CappedCurrencyUpgradeEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="52" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="52" />
+          <folding>
+            <marker date="1551812568522" expanded="true" signature="24:333" ph="{...}" />
+            <marker date="1551812568522" expanded="true" signature="95:331" ph="{...}" />
+            <marker date="1551812568522" expanded="true" signature="266:325" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencySpentEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+          <folding>
+            <marker date="1551812006484" expanded="true" signature="24:211" ph="{...}" />
+            <marker date="1551812006484" expanded="true" signature="85:209" ph="{...}" />
+            <marker date="1551812006484" expanded="true" signature="183:203" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyInsufficientEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+          <folding>
+            <marker date="1551811443486" expanded="true" signature="24:460" ph="{...}" />
+            <marker date="1551811443486" expanded="true" signature="85:458" ph="{...}" />
+            <marker date="1551811443486" expanded="true" signature="338:452" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding>
+            <marker date="1551811438037" expanded="true" signature="39:260" ph="{...}" />
+            <marker date="1551811438037" expanded="true" signature="84:258" ph="{...}" />
+            <marker date="1551811438037" expanded="true" signature="199:252" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyChangedEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <marker date="1551812216896" expanded="true" signature="24:291" ph="{...}" />
+            <marker date="1551812216896" expanded="true" signature="89:289" ph="{...}" />
+            <marker date="1551812216896" expanded="true" signature="234:283" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyAddedEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding>
+            <marker date="1551812216807" expanded="true" signature="24:211" ph="{...}" />
+            <marker date="1551812216807" expanded="true" signature="85:209" ph="{...}" />
+            <marker date="1551812216807" expanded="true" signature="183:203" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CappedCurrencyUpgradeFailedEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+          <folding>
+            <marker date="1551812568595" expanded="true" signature="24:230" ph="{...}" />
+            <marker date="1551812568595" expanded="true" signature="105:228" ph="{...}" />
+            <marker date="1551812568595" expanded="true" signature="202:222" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CappedCurrencyUpgradeSuccessEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1551812568562" expanded="true" signature="24:232" ph="{...}" />
+            <marker date="1551812568562" expanded="true" signature="106:230" ph="{...}" />
+            <marker date="1551812568562" expanded="true" signature="204:224" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/DSCurrency.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+          <folding>
+            <marker date="1551812310096" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551812310096" expanded="true" signature="97:1330" ph="{...}" />
+            <marker date="1551812310096" expanded="true" signature="139:1328" ph="{...}" />
+            <marker date="1551812310096" expanded="true" signature="210:282" ph="{...}" />
+            <marker date="1551812310096" expanded="true" signature="442:969" ph="{...}" />
+            <marker date="1551812310096" expanded="true" signature="480:636" ph="{...}" />
+            <marker date="1551812310096" expanded="true" signature="672:831" ph="{...}" />
+            <marker date="1551812310096" expanded="true" signature="1015:1322" ph="{...}" />
+            <marker date="1551812310096" expanded="true" signature="1053:1209" ph="{...}" />
           </folding>
         </state>
       </provider>

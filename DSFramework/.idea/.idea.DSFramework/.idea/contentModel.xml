@@ -17,6 +17,24 @@
             <e p="ISaveDataBundle.cs" t="Include" />
             <e p="SaveDataBundle.cs" t="Include" />
           </e>
+          <e p="Economy" t="Include">
+            <e p="CappedCurrencyCapacity.cs" t="Include" />
+            <e p="DSCappedCurrency.cs" t="Include" />
+            <e p="DSCurrency.cs" t="Include" />
+            <e p="DSEconomy.cs" t="Include" />
+            <e p="Events" t="Include">
+              <e p="CappedCurrencyUpgradeEvent.cs" t="Include" />
+              <e p="CappedCurrencyUpgradeFailedEvent.cs" t="Include" />
+              <e p="CappedCurrencyUpgradeSuccessEvent.cs" t="Include" />
+              <e p="CurrencyAddedEvent.cs" t="Include" />
+              <e p="CurrencyChangedEvent.cs" t="Include" />
+              <e p="CurrencyEvent.cs" t="Include" />
+              <e p="CurrencyInsufficientEvent.cs" t="Include" />
+              <e p="CurrencySpentEvent.cs" t="Include" />
+            </e>
+            <e p="ICappedCurrency.cs" t="Include" />
+            <e p="ICurrency.cs" t="Include" />
+          </e>
           <e p="Events" t="Include">
             <e p="DSEvents.cs" t="Include" />
             <e p="DSEventsGroup.cs" t="Include" />
