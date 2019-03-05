@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0ef058c-1554-47f3-8fa6-9eb1858c77b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/CappedCurrencyCapacity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/CappedCurrencyCapacity.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/DSCappedCurrency.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/DSCappedCurrency.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/DSCurrency.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/DSCurrency.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/DSEconomy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/DSEconomy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/Events.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/ICappedCurrency.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/ICappedCurrency.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/ICurrency.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Economy/ICurrency.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f0ef058c-1554-47f3-8fa6-9eb1858c77b8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/DSCurrency.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+            <state relative-caret-position="135">
+              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding>
                 <marker date="1551812310096" expanded="false" signature="6:78" ph="..." />
                 <marker date="1551812310096" expanded="true" signature="97:1330" ph="{...}" />
@@ -285,12 +268,12 @@
       <workItem from="1551120174734" duration="6678000" />
       <workItem from="1551200600736" duration="2058000" />
       <workItem from="1551443789957" duration="12097000" />
-      <workItem from="1551800184278" duration="6824000" />
+      <workItem from="1551800184278" duration="7712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27657000" />
+    <option name="totallyTimeSpent" value="28545000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -833,8 +816,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/DSCurrency.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        <state relative-caret-position="135">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding>
             <marker date="1551812310096" expanded="false" signature="6:78" ph="..." />
             <marker date="1551812310096" expanded="true" signature="97:1330" ph="{...}" />

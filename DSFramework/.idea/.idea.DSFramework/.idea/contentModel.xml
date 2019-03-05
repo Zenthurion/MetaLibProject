@@ -7,6 +7,12 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Achievements" t="Include">
+            <e p="DSAchievement.cs" t="Include" />
+            <e p="DSCompositeAchievement.cs" t="Include" />
+            <e p="DSStatAchievement.cs" t="Include" />
+            <e p="IAchievement.cs" t="Include" />
+          </e>
           <e p="Core" t="Include">
             <e p="DSBehaviour.cs" t="Include" />
           </e>
