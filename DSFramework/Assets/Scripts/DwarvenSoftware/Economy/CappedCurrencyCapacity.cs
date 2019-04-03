@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace DwarvenSoftware.Economy
 {
-    public class CappedCurrencyCapacity
+    public class CappedCurrencyCapacity : ICurrencyCapacity
     {
         private readonly List<long> _capacities;
 
