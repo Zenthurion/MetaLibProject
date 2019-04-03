@@ -4,7 +4,7 @@ using JetBrains.Annotations;
 
 namespace DwarvenSoftware.Economy
 {
-    public class DSCappedCurrency : DSCurrency, ICappedCurrency
+    public class DSCappedCurrency : DSCurrency, IUpgradableCurrency
     {
         private readonly CappedCurrencyCapacity _capacity;
 
@@ -31,12 +31,12 @@ namespace DwarvenSoftware.Economy
         {
             if (Level >= _capacity.Count - 1)
             {
-                DSEvents.RaiseEvent(new CappedCurrencyUpgradeFailedEvent(this));
+                DSEvents.RaiseEvent(new UpgradableCurrencyUpgradeFailedEvent(this));
                 return false;
             }
 
             Level++;
-            DSEvents.RaiseEvent(new CappedCurrencyUpgradeSuccessEvent(this));
+            DSEvents.RaiseEvent(new UpgradableCurrencyUpgradeSuccessEvent(this));
             return true;
         }
     }

@@ -6,7 +6,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Editor.Tests.Economy
+namespace DwarvenSoftware.Editor.Tests.Economy
 {
     public class CurrencyEventTests
     {
@@ -52,13 +52,13 @@ namespace Editor.Tests.Economy
         }
         
         [Test]
-        public void CurrencyEvent_RestrictedCurrencyUpgraded()
+        public void CurrencyEvent_UpgradableCurrencyUpgraded()
         {
             var name = DSUtils.GetRandomString();
             var capacity = new CappedCurrencyCapacity(5, 10);
-            ICappedCurrency currency = new DSCappedCurrency(name, capacity);
+            IUpgradableCurrency currency = new DSCappedCurrency(name, capacity);
             
-            DSEvents.Add(new DSEvents.EventDelegate<CappedCurrencyUpgradeSuccessEvent>((e => {Debug.Log(e.Currency.Name);})));
+            DSEvents.Add(new DSEvents.EventDelegate<UpgradableCurrencyUpgradeSuccessEvent>((e => {Debug.Log(e.Currency.Name);})));
 
             currency.TryUpgradeCapacity();
             
@@ -66,13 +66,13 @@ namespace Editor.Tests.Economy
         }
         
         [Test]
-        public void CurrencyEvent_RestrictedCurrencyUpgradeFailed()
+        public void CurrencyEvent_UpgradableCurrencyUpgradeFailed()
         {
             var name = DSUtils.GetRandomString();
             var capacity = new CappedCurrencyCapacity(5, 10);
-            ICappedCurrency currency = new DSCappedCurrency(name, capacity);
+            IUpgradableCurrency currency = new DSCappedCurrency(name, capacity);
             
-            DSEvents.Add(new DSEvents.EventDelegate<CappedCurrencyUpgradeFailedEvent>((e => {Debug.Log("Upgrade Failed");})));
+            DSEvents.Add(new DSEvents.EventDelegate<UpgradableCurrencyUpgradeFailedEvent>((e => {Debug.Log("Upgrade Failed");})));
 
             currency.TryUpgradeCapacity();
             currency.TryUpgradeCapacity();

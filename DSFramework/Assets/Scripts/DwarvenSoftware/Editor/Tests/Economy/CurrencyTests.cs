@@ -4,7 +4,7 @@ using DwarvenSoftware.Economy;
 using DwarvenSoftware.Utils;
 using NUnit.Framework;
 
-namespace Editor.Tests.Economy
+namespace DwarvenSoftware.Editor.Tests.Economy
 {
     public class CurrencyTests
     {

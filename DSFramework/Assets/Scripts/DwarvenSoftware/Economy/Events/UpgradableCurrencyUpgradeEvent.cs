@@ -1,8 +1,8 @@
 namespace DwarvenSoftware.Economy.Events
 {
-    public abstract class CappedCurrencyUpgradeEvent : CurrencyEvent
+    public abstract class UpgradableCurrencyUpgradeEvent : CurrencyEvent
     {
-        protected CappedCurrencyUpgradeEvent(ICappedCurrency currency) : base(currency)
+        protected UpgradableCurrencyUpgradeEvent(ICappedCurrency currency) : base(currency)
         {
             CappedCurrency = currency;
         }
