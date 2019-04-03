@@ -1,5 +1,6 @@
 using System;
 using DwarvenSoftware.Achievements;
+using DwarvenSoftware.Editor.Tests.Achievements;
 using DwarvenSoftware.Events;
 using NUnit.Framework;
 

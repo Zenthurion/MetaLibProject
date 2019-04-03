@@ -1,7 +1,7 @@
 using DwarvenSoftware.Achievements;
 using DwarvenSoftware.Events;
 
-namespace Editor.Tests.Achievements
+namespace DwarvenSoftware.Editor.Tests.Achievements
 {
     internal class StatDSAchievementTest : DSStatAchievement
     {
