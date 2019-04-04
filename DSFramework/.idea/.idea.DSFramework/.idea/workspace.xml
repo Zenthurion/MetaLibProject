@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0ef058c-1554-47f3-8fa6-9eb1858c77b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSInventory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSInventory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IInventoryItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IInventoryItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IInventoryItemStack.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IInventoryItemStack.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSCompositeStorageCapacityProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSCompositeStorageCapacityProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSInventoryItemStack.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSInventoryItemStack.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSListInventory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSListInventory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSSimpleStorageCapacityProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSSimpleStorageCapacityProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSUniqueInventory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSUniqueInventory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IStorageCapacityProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IStorageCapacityProvider.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DSFramework/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSInventory.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,45 +25,54 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSInventory.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+            <state relative-caret-position="840">
+              <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
               <folding>
-                <marker date="1554319388936" expanded="true" signature="6:47" ph="..." />
-                <marker date="1554319388936" expanded="true" signature="84:524" ph="{...}" />
-                <marker date="1554319388936" expanded="true" signature="115:522" ph="{...}" />
-                <marker date="1554319388936" expanded="true" signature="261:338" ph="{...}" />
-                <marker date="1554319388936" expanded="true" signature="388:421" ph="{...}" />
-                <marker date="1554319388936" expanded="true" signature="474:507" ph="{...}" />
+                <marker date="1554407879968" expanded="false" signature="6:47" ph="..." />
+                <marker date="1554407879968" expanded="true" signature="144:1862" ph="{...}" />
+                <marker date="1554407879968" expanded="true" signature="184:1860" ph="{...}" />
+                <marker date="1554407879968" expanded="true" signature="380:545" ph="{...}" />
+                <marker date="1554407879968" expanded="true" signature="614:786" ph="{...}" />
+                <marker date="1554407879968" expanded="true" signature="668:750" ph="{...}" />
+                <marker date="1554407879968" expanded="true" signature="858:1139" ph="{...}" />
+                <marker date="1554407879968" expanded="true" signature="945:1102" ph="{...}" />
+                <marker date="1554407879968" expanded="true" signature="1186:1248" ph="{...}" />
+                <marker date="1554407879968" expanded="true" signature="1297:1392" ph="{...}" />
+                <marker date="1554407879968" expanded="true" signature="1465:1551" ph="{...}" />
+                <marker date="1554407879968" expanded="true" signature="1637:1690" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IInventoryItemStack.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSCompositeStorageCapacityProvider.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <caret line="8" column="77" lean-forward="true" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
               <folding>
-                <marker date="1554319305086" expanded="true" signature="35:224" ph="{...}" />
-                <marker date="1554319305086" expanded="true" signature="78:222" ph="{...}" />
+                <marker date="1554407228922" expanded="true" signature="6:75" ph="..." />
+                <marker date="1554407228922" expanded="true" signature="112:550" ph="{...}" />
+                <marker date="1554407228922" expanded="true" signature="193:548" ph="{...}" />
+                <marker date="1554407228922" expanded="true" signature="446:542" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IInventoryItem.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSSimpleStorageCapacityProvider.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+            <state relative-caret-position="120">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
               <folding>
-                <marker date="1554317518635" expanded="true" signature="35:118" ph="{...}" />
-                <marker date="1554317518635" expanded="true" signature="73:116" ph="{...}" />
+                <marker date="1554407086299" expanded="true" signature="35:279" ph="{...}" />
+                <marker date="1554407086299" expanded="true" signature="113:277" ph="{...}" />
+                <marker date="1554407086299" expanded="true" signature="218:271" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -69,24 +84,30 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSCompositeStorageCapacityProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Quests/IQuest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Editor/Tests/Economy/CurrencyTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Economy/ICurrencyCapacityProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Editor/Tests/Economy/CurrencyEventTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Editor/Tests/Economy/CappedCurrencyTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSUniqueInventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Editor/Tests/Achievements/CompositeAchievementTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSListInventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../phoenix/Phoenix/Assets/DwarvenSoftware/Scripts/Utils/DSUtils.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Editor/Tests/Achievements/AchievementsTestClasses.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSInventoryItemStack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Economy/CompositeCurrency.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Economy/DSCappedCurrency.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Economy/CappedCurrencyCapacity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Editor/Tests/Economy/CompositeCurrencyTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Economy/ICappedCurrency.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IInventoryItemStack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IStorageCapacityProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Economy/ICurrencyCapacity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Editor/Tests/Economy/UpgradableCurrencyTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSInventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Economy/Events/UpgradableCurrencyUpgradeFailedEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSSimpleStorageCapacityProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Core/DSBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Objectives/IObjective.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Economy/ICompositeCurrency.cs" root0="FORCE_HIGHLIGHTING" />
@@ -100,12 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencySpentEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Events/RestrictedCurrencyUpgradeEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Events/RestrictedCurrencyUpgradeFailedEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Events/RestrictedCurrencyUpgradeSuccessEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/DSCurrency.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/DSRestrictedCurrency.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/DSCappedCurrency.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Events/CappedCurrencyUpgradeEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/DSUtils.cs" />
@@ -150,6 +165,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Editor/Tests/Economy/CompositeCurrencyTests.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IInventoryItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IInventoryItemStack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSInventoryItemStack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IStorageCapacityProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSSimpleStorageCapacityProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSUniqueInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSListInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSCompositeStorageCapacityProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSInventory.cs" />
       </list>
     </option>
@@ -160,7 +181,7 @@
     </ignored-facets>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-63" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -266,12 +287,12 @@
       <workItem from="1551800184278" duration="8895000" />
       <workItem from="1551817023781" duration="7809000" />
       <workItem from="1554117203744" duration="3603000" />
-      <workItem from="1554293407826" duration="15976000" />
+      <workItem from="1554293407826" duration="30804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57116000" />
+    <option name="totallyTimeSpent" value="71944000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -306,7 +327,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="NuGet" order="12" weight="0.32936078" />
       <window_info anchor="bottom" id="Logcat" order="13" />
-      <window_info anchor="bottom" id="Unit Tests" order="14" visible="true" weight="0.24052005" />
+      <window_info anchor="bottom" id="Unit Tests" order="14" weight="0.24052005" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
       <window_info anchor="bottom" id="Version Control" order="16" />
       <window_info anchor="bottom" id="Unity" order="17" />
@@ -372,12 +393,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/CappedCurrencyCapacity.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/DSCappedCurrency.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CappedCurrencyUpgradeEvent.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencySpentEvent.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyInsufficientEvent.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyEvent.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyChangedEvent.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CurrencyAddedEvent.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Events/CappedCurrencyUpgradeFailedEvent.cs" />
@@ -602,8 +617,8 @@
         <state relative-caret-position="60">
           <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
           <folding>
-            <marker date="1554301731427" expanded="true" signature="33:135" ph="{...}" />
-            <marker date="1554301731427" expanded="true" signature="82:133" ph="{...}" />
+            <marker date="1554404868951" expanded="true" signature="33:135" ph="{...}" />
+            <marker date="1554404868951" expanded="true" signature="82:133" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -620,8 +635,8 @@
         <state>
           <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
           <folding>
-            <marker date="1554316175241" expanded="true" signature="33:254" ph="{...}" />
-            <marker date="1554316175241" expanded="true" signature="93:252" ph="{...}" />
+            <marker date="1554404869137" expanded="true" signature="33:254" ph="{...}" />
+            <marker date="1554404869137" expanded="true" signature="93:252" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -631,14 +646,14 @@
         <state relative-caret-position="225">
           <caret line="17" column="77" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
           <folding>
-            <marker date="1554316185042" expanded="false" signature="6:81" ph="..." />
-            <marker date="1554316185042" expanded="true" signature="116:1067" ph="{...}" />
-            <marker date="1554316185042" expanded="true" signature="186:1065" ph="{...}" />
-            <marker date="1554316185042" expanded="true" signature="453:540" ph="{...}" />
-            <marker date="1554316185042" expanded="true" signature="620:796" ph="{...}" />
-            <marker date="1554316185042" expanded="true" signature="671:786" ph="{...}" />
-            <marker date="1554316185042" expanded="true" signature="879:1059" ph="{...}" />
-            <marker date="1554316185042" expanded="true" signature="930:1049" ph="{...}" />
+            <marker date="1554404869215" expanded="false" signature="6:81" ph="..." />
+            <marker date="1554404869215" expanded="true" signature="116:1067" ph="{...}" />
+            <marker date="1554404869215" expanded="true" signature="186:1065" ph="{...}" />
+            <marker date="1554404869215" expanded="true" signature="453:540" ph="{...}" />
+            <marker date="1554404869215" expanded="true" signature="620:796" ph="{...}" />
+            <marker date="1554404869215" expanded="true" signature="671:786" ph="{...}" />
+            <marker date="1554404869215" expanded="true" signature="879:1059" ph="{...}" />
+            <marker date="1554404869215" expanded="true" signature="930:1049" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -717,33 +732,22 @@
         <state relative-caret-position="481">
           <caret line="82" column="50" lean-forward="true" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="50" />
           <folding>
-            <marker date="1554316474372" expanded="true" signature="6:72" ph="..." />
-            <marker date="1554316474372" expanded="true" signature="121:2958" ph="{...}" />
-            <marker date="1554316474372" expanded="true" signature="163:2956" ph="{...}" />
-            <marker date="1554316474372" expanded="true" signature="236:414" ph="{...}" />
-            <marker date="1554316474372" expanded="true" signature="493:831" ph="{...}" />
-            <marker date="1554316474372" expanded="true" signature="913:1553" ph="{...}" />
-            <marker date="1554316474372" expanded="true" signature="1629:2232" ph="{...}" />
-            <marker date="1554316474372" expanded="true" signature="2311:2950" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IInventoryItemStack.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <marker date="1554319305086" expanded="true" signature="35:224" ph="{...}" />
-            <marker date="1554319305086" expanded="true" signature="78:222" ph="{...}" />
+            <marker date="1554404869040" expanded="true" signature="6:72" ph="..." />
+            <marker date="1554404869040" expanded="true" signature="121:2958" ph="{...}" />
+            <marker date="1554404869040" expanded="true" signature="163:2956" ph="{...}" />
+            <marker date="1554404869040" expanded="true" signature="236:414" ph="{...}" />
+            <marker date="1554404869040" expanded="true" signature="493:831" ph="{...}" />
+            <marker date="1554404869040" expanded="true" signature="913:1553" ph="{...}" />
+            <marker date="1554404869040" expanded="true" signature="1629:2232" ph="{...}" />
+            <marker date="1554404869040" expanded="true" signature="2311:2950" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IInventoryItem.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        <state relative-caret-position="75">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
           <folding>
             <marker date="1554317518635" expanded="true" signature="35:118" ph="{...}" />
             <marker date="1554317518635" expanded="true" signature="73:116" ph="{...}" />
@@ -751,17 +755,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSListInventory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+          <folding>
+            <marker date="1554405428966" expanded="true" signature="55:1033" ph="{...}" />
+            <marker date="1554405428966" expanded="true" signature="104:1031" ph="{...}" />
+            <marker date="1554405428966" expanded="true" signature="193:487" ph="{...}" />
+            <marker date="1554405428966" expanded="true" signature="277:350" ph="{...}" />
+            <marker date="1554405428966" expanded="true" signature="406:477" ph="{...}" />
+            <marker date="1554405428966" expanded="true" signature="573:1025" ph="{...}" />
+            <marker date="1554405428966" expanded="true" signature="689:1015" ph="{...}" />
+            <marker date="1554405428966" expanded="true" signature="732:902" ph="{...}" />
+            <marker date="1554405428966" expanded="true" signature="923:1001" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IStorageCapacityProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <marker date="1554407086592" expanded="true" signature="35:127" ph="{...}" />
+            <marker date="1554407086592" expanded="true" signature="83:125" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSSimpleStorageCapacityProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <marker date="1554407086299" expanded="true" signature="35:279" ph="{...}" />
+            <marker date="1554407086299" expanded="true" signature="113:277" ph="{...}" />
+            <marker date="1554407086299" expanded="true" signature="218:271" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSCompositeStorageCapacityProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="77" lean-forward="true" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
+          <folding>
+            <marker date="1554407228922" expanded="true" signature="6:75" ph="..." />
+            <marker date="1554407228922" expanded="true" signature="112:550" ph="{...}" />
+            <marker date="1554407228922" expanded="true" signature="193:548" ph="{...}" />
+            <marker date="1554407228922" expanded="true" signature="446:542" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/IInventoryItemStack.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <marker date="1554319305086" expanded="true" signature="35:224" ph="{...}" />
+            <marker date="1554319305086" expanded="true" signature="78:222" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSInventoryItemStack.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <marker date="1554388777737" expanded="true" signature="50:832" ph="{...}" />
+            <marker date="1554388777737" expanded="true" signature="112:830" ph="{...}" />
+            <marker date="1554388777737" expanded="true" signature="275:358" ph="{...}" />
+            <marker date="1554388777737" expanded="true" signature="394:602" ph="{...}" />
+            <marker date="1554388777737" expanded="true" signature="642:824" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSUniqueInventory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+          <folding>
+            <marker date="1554407086082" expanded="true" signature="69:919" ph="{...}" />
+            <marker date="1554407086082" expanded="true" signature="120:917" ph="{...}" />
+            <marker date="1554407086082" expanded="true" signature="200:495" ph="{...}" />
+            <marker date="1554407086082" expanded="true" signature="260:358" ph="{...}" />
+            <marker date="1554407086082" expanded="true" signature="414:485" ph="{...}" />
+            <marker date="1554407086082" expanded="true" signature="581:911" ph="{...}" />
+            <marker date="1554407086082" expanded="true" signature="707:818" ph="{...}" />
+            <marker date="1554407086082" expanded="true" signature="835:901" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DwarvenSoftware/Inventory/DSInventory.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        <state relative-caret-position="840">
+          <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
           <folding>
-            <marker date="1554319388936" expanded="true" signature="6:47" ph="..." />
-            <marker date="1554319388936" expanded="true" signature="84:524" ph="{...}" />
-            <marker date="1554319388936" expanded="true" signature="115:522" ph="{...}" />
-            <marker date="1554319388936" expanded="true" signature="261:338" ph="{...}" />
-            <marker date="1554319388936" expanded="true" signature="388:421" ph="{...}" />
-            <marker date="1554319388936" expanded="true" signature="474:507" ph="{...}" />
+            <marker date="1554407879968" expanded="false" signature="6:47" ph="..." />
+            <marker date="1554407879968" expanded="true" signature="144:1862" ph="{...}" />
+            <marker date="1554407879968" expanded="true" signature="184:1860" ph="{...}" />
+            <marker date="1554407879968" expanded="true" signature="380:545" ph="{...}" />
+            <marker date="1554407879968" expanded="true" signature="614:786" ph="{...}" />
+            <marker date="1554407879968" expanded="true" signature="668:750" ph="{...}" />
+            <marker date="1554407879968" expanded="true" signature="858:1139" ph="{...}" />
+            <marker date="1554407879968" expanded="true" signature="945:1102" ph="{...}" />
+            <marker date="1554407879968" expanded="true" signature="1186:1248" ph="{...}" />
+            <marker date="1554407879968" expanded="true" signature="1297:1392" ph="{...}" />
+            <marker date="1554407879968" expanded="true" signature="1465:1551" ph="{...}" />
+            <marker date="1554407879968" expanded="true" signature="1637:1690" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -85,9 +85,15 @@
               <e p="State.cs" t="Include" />
             </e>
             <e p="Inventory" t="Include">
+              <e p="DSCompositeStorageCapacityProvider.cs" t="Include" />
               <e p="DSInventory.cs" t="Include" />
+              <e p="DSInventoryItemStack.cs" t="Include" />
+              <e p="DSListInventory.cs" t="Include" />
+              <e p="DSSimpleStorageCapacityProvider.cs" t="Include" />
+              <e p="DSUniqueInventory.cs" t="Include" />
               <e p="IInventoryItem.cs" t="Include" />
               <e p="IInventoryItemStack.cs" t="Include" />
+              <e p="IStorageCapacityProvider.cs" t="Include" />
             </e>
             <e p="Objectives" t="Include">
               <e p="IObjective.cs" t="Include" />
