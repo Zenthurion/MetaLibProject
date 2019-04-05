@@ -66,6 +66,11 @@
                 <e p="Events" t="Include">
                   <e p="EventTests.cs" t="Include" />
                 </e>
+                <e p="Inventory" t="Include">
+                  <e p="ListInventoryTests.cs" t="Include" />
+                  <e p="StorageCapacityProviderTests.cs" t="Include" />
+                  <e p="UniqueInventoryTests.cs" t="Include" />
+                </e>
               </e>
             </e>
             <e p="Events" t="Include">
@@ -91,6 +96,7 @@
               <e p="DSListInventory.cs" t="Include" />
               <e p="DSSimpleStorageCapacityProvider.cs" t="Include" />
               <e p="DSUniqueInventory.cs" t="Include" />
+              <e p="IInventory.cs" t="Include" />
               <e p="IInventoryItem.cs" t="Include" />
               <e p="IInventoryItemStack.cs" t="Include" />
               <e p="IStorageCapacityProvider.cs" t="Include" />
