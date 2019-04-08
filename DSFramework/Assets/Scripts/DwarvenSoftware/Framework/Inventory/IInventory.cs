@@ -9,8 +9,8 @@ namespace DwarvenSoftware.Framework.Inventory
         IStorageCapacityProvider Capacity { get; }
         int CurrentCapacity { get; }
         int StackCount { get; }
-        void AddItem(IInventoryItem item, int amount = 1);
-        void RemoveItem(IInventoryItem item, int amount = 1);
+        TransactionResult AddItem(IInventoryItem item, int amount = 1);
+        TransactionResult RemoveItem(IInventoryItem item, int amount = 1);
         void SetCapacityProvider([NotNull] IStorageCapacityProvider provider);
     }
 }

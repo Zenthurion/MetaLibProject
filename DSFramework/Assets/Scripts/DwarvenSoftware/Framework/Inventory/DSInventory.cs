@@ -81,9 +81,9 @@ namespace DwarvenSoftware.Framework.Inventory
             Capacity = provider;
         }
         
-        public abstract void AddItem(IInventoryItem item, int amount = 1);
+        public abstract TransactionResult AddItem(IInventoryItem item, int amount = 1);
 
-        public abstract void RemoveItem(IInventoryItem item, int amount = 1);
+        public abstract TransactionResult RemoveItem(IInventoryItem item, int amount = 1);
 
     }
 }

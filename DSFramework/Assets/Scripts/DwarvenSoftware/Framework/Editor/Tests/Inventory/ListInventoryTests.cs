@@ -104,6 +104,28 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
         }
         
         [Test]
+        public void ListInventory_RemovingTooMuch()
+        {
+            var provider = Substitute.For<IStorageCapacityProvider>();
+            provider.Capacity.Returns(10);
+            IInventory inventory = new DSUniqueInventory(provider);
+
+            var item1 = Substitute.For<IInventoryItem>();
+            item1.StackSize.Returns(1);
+            
+            var item2 = Substitute.For<IInventoryItem>();
+            item2.StackSize.Returns(1);
+            
+            inventory.AddItem(item1);
+            inventory.AddItem(item2);
+            
+            var res = inventory.RemoveItem(item1, 5);
+            
+            Assert.True(res.Successful);
+            Assert.AreEqual(4, res.Remainder);
+        }
+        
+        [Test]
         public void ListInventory_AddingToExistingStack()
         {
             var provider = Substitute.For<IStorageCapacityProvider>();
@@ -150,11 +172,13 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
             
             inventory.AddItem(item1);
             inventory.AddItem(item1, 5);
-            inventory.AddItem(item1, 5);
+            var res = inventory.AddItem(item1, 5);
             
+            Assert.True(res.Successful);
             Assert.AreEqual(2,inventory.StackCount);
             Assert.AreEqual(4, inventory.Contents[0].Count);
             Assert.AreEqual(4, inventory.Contents[1].Count);
+            Assert.AreEqual(3, res.Remainder);
         }
     }
 }
