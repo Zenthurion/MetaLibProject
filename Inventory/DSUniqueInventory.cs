@@ -8,41 +8,56 @@ namespace DwarvenSoftware.Framework.Inventory
         }
         public override TransactionResult AddItem(IInventoryItem item, int amount = 1)
         {
-            if (TryGetIndex(item, out var index))
-            {
-                var stack = Contents[index];
-                if (!StackHasSpace(index)) return new TransactionResult(item, 0, false);
-                
-                var overflow = amount - stack.AvailableSpace;
+            var lacking = amount;
+            var i = GetItem(item); 
+            if (i != null)
+            { 
+                if (!(i is IInventoryStack stack) || !stack.HasSpace) 
+                    return new TransactionResult(item, lacking);
+
+                lacking = amount >= stack.AvailableSpace ? amount - stack.AvailableSpace : 0;
                 stack.Add(amount);
-                return new TransactionResult(item, overflow > 0 ? overflow : 0, true);
+                return new TransactionResult(item, lacking);
+
             }
-            else if(Contents.Count < Capacity.Capacity)
+
+            if (Contents.Count < Capacity)
             {
-                var overflow = item.StackSize - amount;
-                AddNewStack(item, amount);
-                return new TransactionResult(item, overflow > 0 ? overflow : 0, true);
+                i = AddNewItem(item);
+                if (i is IInventoryStack stack)
+                {
+                    lacking = amount >= stack.AvailableSpace ? amount - stack.AvailableSpace : 0;
+                    stack.Add(amount);
+                }
             }
-            
-            return new TransactionResult(item, 0, false);
+
+            return new TransactionResult(item, lacking);
         }
         
         public override TransactionResult RemoveItem(IInventoryItem item, int amount = 1)
         {
-            var stack = GetStack(item);
-            if(stack == null) return new TransactionResult(item, 0, false);
-            var lacking = 0;
-            if (stack.Count <= amount)
+            var i = GetItem(item);
+            if(i == null) return new TransactionResult(item, 0);
+            var lacking = amount;
+            if (i is IInventoryStack stack)
             {
-                lacking = amount - stack.Count;
-                stack.Remove(stack.Count);
-                Contents.Remove(stack);
+                if (stack.Count <= lacking)
+                {
+                    lacking = amount - stack.Count;
+                    stack.Remove(stack.Count);
+                    Contents.Remove(stack);
+                }
+                else
+                {
+                    stack.Remove(amount);
+                }
             }
             else
             {
-                stack.Remove(amount);
+                Contents.Remove(i);
+                lacking--;
             }
-            return new TransactionResult(item, lacking, true);
+            return new TransactionResult(item, lacking);
         }
     }
 }

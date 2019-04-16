@@ -1,12 +1,13 @@
 namespace DwarvenSoftware.Framework.Inventory
 {
-    public interface IInventoryItemStack
+    public interface IInventoryStack : IInventoryItem
     {
-        IInventoryItem Type { get; }
-        int Count { get; set; }
         int Capacity { get; }
+        int Count { get; }
+        
         int AvailableSpace { get; }
         bool HasSpace { get; }
+
         void Add(int amount);
         void Remove(int amount);
     }

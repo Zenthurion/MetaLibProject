@@ -1,40 +1,39 @@
 using System.Collections.Generic;
+using System.Linq;
 using JetBrains.Annotations;
+using UnityEngine;
 
 namespace DwarvenSoftware.Framework.Inventory
 {
     public abstract class DSInventory : IInventory
     {
-        public List<IInventoryItemStack> Contents { get; }
+        public List<IInventoryItem> Contents { get; }
 
-        public IStorageCapacityProvider Capacity { get; private set; }
+        public IStorageCapacityProvider CapacityProvider { get; private set; }
 
-        public int CurrentCapacity => Capacity.Capacity;
+        public int Capacity => CapacityProvider.Capacity;
 
-        public int StackCount => Contents.Count;
+        public int Count => Contents.Count;
 
-        protected DSInventory(IStorageCapacityProvider capacity = null)
+        protected DSInventory(IStorageCapacityProvider capacityProvider = null)
         {
-            Contents = new List<IInventoryItemStack>();
+            Contents = new List<IInventoryItem>();
             
-            Capacity = capacity ?? new DSSimpleStorageCapacityProvider(10);
+            CapacityProvider = capacityProvider ?? new DSSimpleStorageCapacityProvider(10);
         }
 
-        protected IInventoryItemStack GetStack(IInventoryItem item)
+        protected IInventoryItem GetItem(IInventoryItem item)
         {
-            foreach (var stack in Contents)
-            {
-                if (stack.Type == item) return stack;
-            }
-
-            return null;
+            return Contents.FirstOrDefault(i => i.Id == item.Id);
+            
         }
 
-        protected IInventoryItemStack GetAvailableStack(IInventoryItem item)
+        protected IInventoryStack GetAvailableStack(IInventoryItem item)
         {
-            foreach (var stack in Contents)
+            foreach (var i in Contents)
             {
-                if (stack.Type == item && stack.AvailableSpace > 0) return stack;
+                if (i is IInventoryStack stack && stack.Id == item.Id && stack.AvailableSpace > 0) 
+                    return stack;
             }
 
             return null;
@@ -45,7 +44,7 @@ namespace DwarvenSoftware.Framework.Inventory
             index = -1;
             for (var i = 0; i < Contents.Count; i++)
             {
-                if (Contents[i].Type != item) continue;
+                if (Contents[i].GetType() != item.GetType()) continue;
                 
                 index = i;
                 return true;
@@ -56,29 +55,34 @@ namespace DwarvenSoftware.Framework.Inventory
 
         protected int GetStackSize(int index)
         {
-            return Contents[index].Count;
+            return Contents[index] is IInventoryStack stack ? stack.Count : 1;
         }
 
         protected bool StackHasSpace(int index)
         {
-            return StackHasSpace(Contents[index]);
+            return Contents[index] is IInventoryStack stack && StackHasSpace(stack);
         }
 
-        protected bool StackHasSpace(IInventoryItemStack stack)
+        protected bool StackHasSpace(IInventoryStack stack)
         {
-            return stack.Count < stack.Type.StackSize;
+            return stack.Count < stack.Capacity;
         }
 
-        protected IInventoryItemStack AddNewStack(IInventoryItem item, int amount = 0)
+        protected IInventoryItem AddNewItem<T>(T original, int amount = 0) where T : IInventoryItem
         {
-            var stack = new DSInventoryItemStack(item, amount);
-            Contents.Add(stack);
-            return stack;
+            var res = original is IInventoryStack stack ? 
+                new InventoryStack(original.Id, original.Name, original.Weight, stack.Capacity, amount): 
+                original is IInventoryItem item ? 
+                    new InventoryItem(original.Id, original.Name, original.Weight) : 
+                    null;
+            
+            Contents.Add(res);
+            return res;
         }
 
         public void SetCapacityProvider([NotNull] IStorageCapacityProvider provider)
         {
-            Capacity = provider;
+            CapacityProvider = provider;
         }
         
         public abstract TransactionResult AddItem(IInventoryItem item, int amount = 1);

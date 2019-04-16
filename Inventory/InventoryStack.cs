@@ -1,25 +1,23 @@
 namespace DwarvenSoftware.Framework.Inventory
 {
-    public class DSInventoryItemStack : IInventoryItemStack
+    public class InventoryStack : InventoryItem, IInventoryStack
     {
-        public IInventoryItem Type { get; }
-        public int Count { get; set; }
-        public int Capacity => Type.StackSize;
+        public int Count { get; private set; }
+        public int Capacity { get; }
         public int AvailableSpace => Capacity - Count;
         public bool HasSpace => AvailableSpace > 0;
 
-        public DSInventoryItemStack(IInventoryItem type, int amount = 0)
+        public InventoryStack(int id, string name, float weight, int capacity, int initialAmount = 0) : base(id, name, weight)
         {
-            Type = type;
-            
-            Add(amount);
+            Capacity = capacity;
+            Add(initialAmount);
         }
         public void Add(int amount)
         {
             if(amount <= 0) return;
             
-            if (Count + amount > Type.StackSize)
-                Count = Type.StackSize;
+            if (Count + amount > Capacity)
+                Count = Capacity;
             else
                 Count += amount;
         }

@@ -11,7 +11,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
             var provider = new DSSimpleStorageCapacityProvider(5);
             var inventory = new DSListInventory(provider);
             
-            Assert.AreEqual(5, inventory.CurrentCapacity);
+            Assert.AreEqual(5, inventory.Capacity);
         }
         [Test]
         public void StorageProvider_SimpleCapacityChange()
@@ -21,7 +21,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
             var provider2 = new DSSimpleStorageCapacityProvider(15);
             inventory.SetCapacityProvider(provider2);
             
-            Assert.AreEqual(15, inventory.CurrentCapacity);
+            Assert.AreEqual(15, inventory.Capacity);
         }
         [Test]
         public void StorageProvider_CompositeCapacity()
@@ -30,7 +30,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
             var inventory = new DSListInventory(provider1);
 
             
-            Assert.AreEqual(10, inventory.CurrentCapacity);
+            Assert.AreEqual(10, inventory.Capacity);
         }
     }
 }

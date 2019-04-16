@@ -4,13 +4,11 @@ namespace DwarvenSoftware.Framework.Inventory
     {
         public readonly IInventoryItem Item;
         public readonly int Remainder;
-        public readonly bool Successful;
 
-        public TransactionResult(IInventoryItem item, int remainder, bool successful)
+        public TransactionResult(IInventoryItem item, int remainder)
         {
             Item = item;
             Remainder = remainder;
-            Successful = successful;
         }
     }
 }

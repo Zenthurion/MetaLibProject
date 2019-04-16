@@ -2,6 +2,8 @@ namespace DwarvenSoftware.Framework.Inventory
 {
     public interface IInventoryItem
     {
-        int StackSize { get; }
+        int Id { get; }
+        string Name { get; }
+        float Weight { get; }
     }
 }
