@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace DwarvenSoftware.Framework.FSM.Examples
 {
+    [RequireComponent(typeof(MeshRenderer))]
     public class SimpleStateExample : FSMBehaviour
     {
         private SimpleState _blue;

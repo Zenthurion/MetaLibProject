@@ -5,7 +5,12 @@ namespace DwarvenSoftware.Framework.Data
 {
     public class SaveDataBundle : ISaveDataBundle
     {
-        private List<object> _data;
+        private readonly List<object> _data;
+
+        public SaveDataBundle()
+        {
+            _data = new List<object>();
+        }
 
         public IEnumerator GetEnumerator()
         {
