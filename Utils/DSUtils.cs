@@ -17,5 +17,18 @@ namespace DwarvenSoftware.Framework.Utils
         {
             return Path.GetRandomFileName().Replace(".", "");
         }
+
+        public static T RaycastMouse<T>(Camera cam)
+        {
+            return RaycastMouse(cam, out var hit) ? 
+                hit.transform.GetComponent<T>() : 
+                default(T);
+        }
+
+        public static bool RaycastMouse(Camera cam, out RaycastHit hit)
+        {
+            var ray = cam.ScreenPointToRay(Input.mousePosition);
+            return Physics.Raycast(ray, out hit);
+        }
     }
 }

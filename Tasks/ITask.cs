@@ -12,7 +12,7 @@ namespace DwarvenSoftware.Framework.Tasks
         event TaskEvent OnComplete;
         event TaskEvent OnEnd;
 
-        void SetCompletionCondition(Func<bool> condition);
+        void SetCompletionCondition(Func<ITask, bool> condition);
         
         void Evaluate();
         void Cancel();

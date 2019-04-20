@@ -7,21 +7,21 @@ namespace DwarvenSoftware.Framework.Tasks
         public event TaskEvent OnComplete;
         public event TaskEvent OnEnd;
 
-        private Func<bool>  _condition;
+        private Func<ITask, bool>  _condition;
 
-        public DSTask(Func<bool>  condition)
+        public DSTask(Func<ITask, bool>  condition)
         {
             SetCompletionCondition(condition);
         }
         
-        public void SetCompletionCondition(Func<bool> condition)
+        public void SetCompletionCondition(Func<ITask, bool> condition)
         {
             _condition = condition;
         }
 
-        public void Evaluate()
+        public virtual void Evaluate()
         {
-            if(!_condition.Invoke()) return;
+            if(!_condition.Invoke(this)) return;
             
             OnComplete?.Invoke();
             OnEnd?.Invoke();

@@ -10,7 +10,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
         public void Task_Completed()
         {
             var num = new DSInt(5);
-            var a = new DSTask(() => num.Value == 4);
+            var a = new DSTask((t) => num.Value == 4);
             a.OnComplete += () => { num.Value = 2; };
 
             a.Evaluate();
@@ -25,7 +25,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
         public void Task_Cancelled()
         {
             var num = new DSInt(5);
-            var a = new DSTask(() => num.Value == 4);
+            var a = new DSTask((t) => num.Value == 4);
             a.OnComplete += () => { num.Value = 2; };
             a.OnEnd += () => { num.Value = 3; };
             a.Cancel();
@@ -38,7 +38,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
         {
             var taskStack = new DSTaskStack();
             var num = new DSInt(5);
-            var a = new DSTask(() => num.Value == 4);
+            var a = new DSTask((t) => num.Value == 4);
             a.OnComplete += () => num.Value = 0;
             taskStack.PushQueue(a);
             num.Value--;
@@ -53,8 +53,8 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
         {
             var taskStack = new DSTaskStack();
             var num = new DSInt(5);
-            var a = new DSTask(() => num.Value == 4);
-            var b = new DSTask(() => num.Value == 3);
+            var a = new DSTask((t) => num.Value == 4);
+            var b = new DSTask((t) => num.Value == 3);
             b.OnComplete += () => num.Value = 0;
             taskStack.PushQueue(a);
             taskStack.PushQueue(b);
@@ -76,9 +76,9 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
         {
             var taskStack = new DSTaskStack();
             var num = new DSInt(5);
-            var a = new DSTask(() => num.Value == 4);
-            var b = new DSTask(() => num.Value == 3);
-            var c = new DSTask(() => num.Value == 2);
+            var a = new DSTask((t) => num.Value == 4);
+            var b = new DSTask((t) => num.Value == 3);
+            var c = new DSTask((t) => num.Value == 2);
             c.OnComplete += () => num.Value = 0;
             taskStack.PushQueue(a);
             taskStack.PushQueue(b);
@@ -106,9 +106,9 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
         {
             var taskStack = new DSTaskStack();
             var num = new DSInt(5);
-            var a = new DSTask(() => num.Value == 4);
-            var b = new DSTask(() => num.Value == 3);
-            var c = new DSTask(() => num.Value == 2);
+            var a = new DSTask((t) => num.Value == 4);
+            var b = new DSTask((t) => num.Value == 3);
+            var c = new DSTask((t) => num.Value == 2);
             c.OnComplete += () => num.Value = 0;
             taskStack.PushQueue(a);
             taskStack.PushQueue(b);
@@ -124,9 +124,9 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
         {
             var taskStack = new DSTaskStack(3);
             var num = new DSInt(5);
-            var a = new DSTask(() => num.Value == 4);
-            var b = new DSTask(() => num.Value == 3);
-            var c = new DSTask(() => num.Value == 2);
+            var a = new DSTask((t) => num.Value == 4);
+            var b = new DSTask((t) => num.Value == 3);
+            var c = new DSTask((t) => num.Value == 2);
             c.OnComplete += () => num.Value = 0;
             taskStack.PushQueue(a);
             taskStack.PushQueue(b);
@@ -142,9 +142,9 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
         {
             var taskStack = new DSTaskStack();
             var num = new DSInt(5);
-            var a = new DSTask(() => num.Value == 4);
-            var b = new DSTask(() => num.Value == 3);
-            var c = new DSTask(() => num.Value == 2);
+            var a = new DSTask((t) => num.Value == 4);
+            var b = new DSTask((t) => num.Value == 3);
+            var c = new DSTask((t) => num.Value == 2);
             c.OnComplete += () => num.Value = 0;
             taskStack.PushQueue(a);
             taskStack.PushQueue(b);
