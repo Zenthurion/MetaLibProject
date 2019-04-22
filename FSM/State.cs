@@ -1,13 +1,35 @@
+using System.Collections.Generic;
+
 namespace DwarvenSoftware.Framework.FSM
 {
     public abstract class State : IState
     {
         private StateState _stateState = StateState.Idle;
-
+        private readonly Dictionary<StatePhase, HashSet<ITransition>> _transitions;
 
         protected State(IFiniteStateMachine owner)
         {
+            _transitions = new Dictionary<StatePhase, HashSet<ITransition>>();
             FSM = owner;
+        }
+
+        public void AddTransition(StatePhase phase, ITransition transition)
+        {
+            if (_transitions.TryGetValue(phase, out var t))
+                t.Add(transition);
+            else
+            {
+                var set = new HashSet<ITransition>();
+                _transitions.Add(phase, set);
+                set.Add(transition);
+            } 
+                
+        }
+
+        public void RemoveTransition(StatePhase phase, ITransition transition)
+        {
+            if (_transitions.TryGetValue(phase, out var t))
+                t.Remove(transition);
         }
 
         public IFiniteStateMachine FSM { get; }
@@ -15,18 +37,21 @@ namespace DwarvenSoftware.Framework.FSM
         public void Update()
         {
             if (_stateState != StateState.Running) return;
+            ProcessTransitions(StatePhase.Update);
             StateUpdate();
         }
 
         public void FixedUpdate()
         {
             if (_stateState != StateState.Running) return;
+            ProcessTransitions(StatePhase.FixedUpdate);
             StateFixedUpdate();
         }
 
         public void LateUpdate()
         {
             if (_stateState != StateState.Running) return;
+            ProcessTransitions(StatePhase.LateUpdate);
             StateLateUpdate();
         }
 
@@ -34,6 +59,7 @@ namespace DwarvenSoftware.Framework.FSM
         {
             if (_stateState != StateState.Idle) return;
             _stateState = StateState.Running;
+            ProcessTransitions(StatePhase.Enter);
             StateEnter();
         }
 
@@ -41,6 +67,7 @@ namespace DwarvenSoftware.Framework.FSM
         {
             if (_stateState != StateState.Running) return;
             _stateState = StateState.Idle;
+            ProcessTransitions(StatePhase.Exit);
             StateExit();
         }
 
@@ -62,6 +89,15 @@ namespace DwarvenSoftware.Framework.FSM
 
         public virtual void StateExit()
         {
+        }
+
+        private void ProcessTransitions(StatePhase phase)
+        {
+            if (!_transitions.TryGetValue(phase, out var t)) return;
+            foreach (var x in t)
+            {
+                if(x.Evaluate()) x.Execute();
+            }
         }
 
         private enum StateState
