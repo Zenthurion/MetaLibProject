@@ -7,7 +7,7 @@ namespace DwarvenSoftware.Framework.FSM
         void FixedUpdate();
         void LateUpdate();
 
-        void AddState(IState state);
+        void AddState(params IState[] state);
         void SetInitialState(IState state);
         void ChangeState(IState state);
     }

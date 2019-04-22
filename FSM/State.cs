@@ -87,7 +87,7 @@ namespace DwarvenSoftware.Framework.FSM
         {
         }
 
-        public virtual void StateExit()
+        protected virtual void StateExit()
         {
         }
 

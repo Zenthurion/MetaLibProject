@@ -38,7 +38,7 @@ namespace DwarvenSoftware.Framework.FSM
             OnEnter?.Invoke(this);
         }
 
-        public override void StateExit()
+        protected override void StateExit()
         {
             base.StateExit();
             OnExit?.Invoke(this);

@@ -19,9 +19,9 @@ namespace DwarvenSoftware.Framework.FSM
 
         public IState CurrentState { get; private set; }
 
-        public void AddState(IState state)
+        public void AddState(params IState[] state)
         {
-            _states.Add(state);
+            _states.AddRange(state);
         }
 
         public void Update()
