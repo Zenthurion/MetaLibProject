@@ -89,5 +89,7 @@ namespace DwarvenSoftware.Framework.Inventory
 
         public abstract TransactionResult RemoveItem(IInventoryItem item, int amount = 1);
 
+        public abstract bool CanFit(IInventoryItem item);
+
     }
 }

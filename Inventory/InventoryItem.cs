@@ -12,5 +12,10 @@ namespace DwarvenSoftware.Framework.Inventory
             Name = name;
             Weight = weight;
         }
+
+        public virtual IInventoryItem Clone()
+        {
+            return new InventoryItem(Id, Name, Weight);
+        }
     }
 }

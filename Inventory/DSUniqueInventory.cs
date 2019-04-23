@@ -59,5 +59,13 @@ namespace DwarvenSoftware.Framework.Inventory
             }
             return new TransactionResult(item, lacking);
         }
+
+        public override bool CanFit(IInventoryItem item)
+        {
+            if (!Contents.Contains(item) && Capacity > Count) return true;
+            if (item is IInventoryStack stack) return stack.Capacity > stack.Count;
+            return false;
+
+        }
     }
 }

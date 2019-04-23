@@ -2,7 +2,7 @@ namespace DwarvenSoftware.Framework.Inventory
 {
     public class DSListInventory : DSInventory
     {
-        public DSListInventory(IStorageCapacityProvider capacityProvider) : base(capacityProvider)
+        public DSListInventory(IStorageCapacityProvider capacityProvider = null) : base(capacityProvider)
         {
         }
 
@@ -72,6 +72,14 @@ namespace DwarvenSoftware.Framework.Inventory
             }
 
             return new TransactionResult(item, lacking);
+        }
+
+        public override bool CanFit(IInventoryItem item)
+        {
+            if (item is IInventoryStack stack)
+                return stack.Capacity > stack.Count;
+            
+            return Capacity > Count;
         }
     }
 }

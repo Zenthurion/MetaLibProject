@@ -12,5 +12,7 @@ namespace DwarvenSoftware.Framework.Inventory
         TransactionResult AddItem(IInventoryItem item, int amount = 1);
         TransactionResult RemoveItem(IInventoryItem item, int amount = 1);
         void SetCapacityProvider([NotNull] IStorageCapacityProvider provider);
+
+        bool CanFit(IInventoryItem item);
     }
 }

@@ -5,5 +5,6 @@ namespace DwarvenSoftware.Framework.Inventory
         int Id { get; }
         string Name { get; }
         float Weight { get; }
+        IInventoryItem Clone();
     }
 }

@@ -31,5 +31,10 @@ namespace DwarvenSoftware.Framework.Inventory
             else
                 Count -= amount;
         }
+
+        public override IInventoryItem Clone()
+        {
+            return new InventoryStack(Id, Name, Weight, Capacity);
+        }
     }
 }
