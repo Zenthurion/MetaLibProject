@@ -10,7 +10,7 @@ namespace DwarvenSoftware.Framework.Interaction
         bool IsSelectable { get; }
         bool IsSelected { get; }
         
-        void Select();
-        void Deselect();
+        void OnSelect();
+        void OnDeselect();
     }
 }

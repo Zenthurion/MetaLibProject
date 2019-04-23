@@ -5,6 +5,8 @@ namespace DwarvenSoftware.Framework.FSM
     public class FiniteStateMachine : IFiniteStateMachine
     {
         private readonly List<IState> _states;
+        
+        public event StateChangeEvent OnStateChange;
 
         public FiniteStateMachine()
         {
@@ -51,7 +53,7 @@ namespace DwarvenSoftware.Framework.FSM
 
             CurrentState?.Exit();
             state.Enter();
-
+            OnStateChange?.Invoke(state, CurrentState);
             CurrentState = state;
         }
     }
