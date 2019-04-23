@@ -2,6 +2,7 @@ namespace DwarvenSoftware.Framework.FSM
 {
     public interface IState
     {
+        string Name { get; }
         void Update();
         void FixedUpdate();
         void LateUpdate();

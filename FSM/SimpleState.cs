@@ -4,7 +4,7 @@ namespace DwarvenSoftware.Framework.FSM
 
     public class SimpleState : State
     {
-        public SimpleState(IFiniteStateMachine owner) : base(owner)
+        public SimpleState(IFiniteStateMachine owner, string name) : base(owner, name)
         {
         }
 

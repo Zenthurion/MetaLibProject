@@ -1,7 +1,9 @@
 namespace DwarvenSoftware.Framework.FSM
 {
+    public delegate void StateChangeEvent(IState newState, IState previousState);
     public interface IFiniteStateMachine
     {
+        event StateChangeEvent OnStateChange;
         IState CurrentState { get; }
         void Update();
         void FixedUpdate();

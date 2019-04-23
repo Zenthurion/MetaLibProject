@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace DwarvenSoftware.Framework.FSM
@@ -6,6 +7,9 @@ namespace DwarvenSoftware.Framework.FSM
     {
         protected IFiniteStateMachine FSM { get; private set; }
 
+        [ShowInInspector]
+        public string CurrentStateName => FSM?.CurrentState?.Name;
+
         protected virtual void Awake()
         {
             FSM = new FiniteStateMachine();
@@ -13,7 +17,7 @@ namespace DwarvenSoftware.Framework.FSM
 
         private void Start()
         {
-            FSM.CurrentState.Enter();
+            FSM.CurrentState?.Enter();
         }
 
         protected virtual void Update()

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace DwarvenSoftware.Framework.FSM
@@ -7,10 +8,11 @@ namespace DwarvenSoftware.Framework.FSM
         private StateState _stateState = StateState.Idle;
         private readonly Dictionary<StatePhase, HashSet<ITransition>> _transitions;
 
-        protected State(IFiniteStateMachine owner)
+        protected State(IFiniteStateMachine owner, string name)
         {
             _transitions = new Dictionary<StatePhase, HashSet<ITransition>>();
             FSM = owner;
+            Name = name;
         }
 
         public void AddTransition(StatePhase phase, ITransition transition)
@@ -32,6 +34,8 @@ namespace DwarvenSoftware.Framework.FSM
                 t.Remove(transition);
         }
 
+        public string Name { get; private set; }
+        
         public IFiniteStateMachine FSM { get; }
 
         public void Update()
