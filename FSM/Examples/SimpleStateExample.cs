@@ -18,7 +18,6 @@ namespace DwarvenSoftware.Framework.FSM.Examples
             base.Awake();
             _renderer = GetComponent<MeshRenderer>();
 
-
             _red = new SimpleState(FSM, "red");
             _green = new SimpleState(FSM, "green");
             _blue = new SimpleState(FSM, "blue");
