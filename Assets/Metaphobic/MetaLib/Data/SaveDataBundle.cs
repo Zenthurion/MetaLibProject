@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace DwarvenSoftware.Framework.Data
+namespace MetaLib.Data
 {
     public class SaveDataBundle : ISaveDataBundle
     {

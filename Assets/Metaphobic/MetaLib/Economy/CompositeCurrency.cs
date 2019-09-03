@@ -2,9 +2,9 @@
 using System.Linq;
 using JetBrains.Annotations;
 
-namespace DwarvenSoftware.Framework.Economy
+namespace MetaLib.Economy
 {
-    public class CompositeCurrency : DSCurrency, ICompositeCurrency
+    public class CompositeCurrency : MCurrency, ICompositeCurrency
     {
         private readonly HashSet<ICurrencyCapacityProvider> _providers;
 

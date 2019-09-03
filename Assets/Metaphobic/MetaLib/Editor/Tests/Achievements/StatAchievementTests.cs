@@ -1,24 +1,24 @@
 using System;
-using DwarvenSoftware.Framework.Events;
+using MetaLib.Events;
 using NUnit.Framework;
 
-namespace DwarvenSoftware.Framework.Editor.Tests.Achievements
+namespace MetaLib.Editor.Tests.Achievements
 {
     public class StatAchievementTests
     {
         [Test]
         public void StatAchievement_StartsIncomplete()
         {
-            var achievement = new StatDSAchievementTest(1);
+            var achievement = new StatMAchievementTest(1);
             Assert.IsFalse(achievement.IsCompleted);
         }
 
         [Test]
         public void StatAchievement_CompleteCorrect()
         {
-            var achievement = new StatDSAchievementTest(1);
+            var achievement = new StatMAchievementTest(1);
 
-            DSEvents.RaiseEvent(new TestEvent(1));
+            MEvents.RaiseEvent(new TestEvent(1));
 
             Assert.IsTrue(achievement.IsCompleted);
         }
@@ -26,9 +26,9 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Achievements
         [Test]
         public void StatAchievement_NotCompleted()
         {
-            var achievement = new StatDSAchievementTest(2);
+            var achievement = new StatMAchievementTest(2);
 
-            DSEvents.RaiseEvent(new TestEvent(1));
+            MEvents.RaiseEvent(new TestEvent(1));
 
             Assert.IsFalse(achievement.IsCompleted);
         }
@@ -36,9 +36,9 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Achievements
         [Test]
         public void StatAchievement_PartCompleted()
         {
-            var achievement = new StatDSAchievementTest(2);
+            var achievement = new StatMAchievementTest(2);
 
-            DSEvents.RaiseEvent(new TestEvent(1));
+            MEvents.RaiseEvent(new TestEvent(1));
 
             Assert.IsTrue(Math.Abs(achievement.Progress - 0.5f) < 0.0001f);
         }
@@ -46,13 +46,13 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Achievements
         [Test]
         public void StatAchievement_NegativeTarget()
         {
-            Assert.Throws<ArgumentException>(() => { new StatDSAchievementTest(-1); });
+            Assert.Throws<ArgumentException>(() => { new StatMAchievementTest(-1); });
         }
 
         [Test]
         public void StatAchievement_ZeroTarget()
         {
-            Assert.Throws<ArgumentException>(() => { new StatDSAchievementTest(0); });
+            Assert.Throws<ArgumentException>(() => { new StatMAchievementTest(0); });
         }
     }
 }

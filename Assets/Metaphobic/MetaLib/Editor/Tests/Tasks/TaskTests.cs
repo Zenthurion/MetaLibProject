@@ -1,16 +1,16 @@
-using DwarvenSoftware.Framework.Core;
-using DwarvenSoftware.Framework.Tasks;
+using MetaLib.Core;
+using MetaLib.Tasks;
 using NUnit.Framework;
 
-namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
+namespace MetaLib.Editor.Tests.Tasks
 {
     public class TaskTests
     {
         [Test]
         public void Task_Completed()
         {
-            var num = new DSInt(5);
-            var a = new DSTask((t) => num.Value == 4);
+            var num = new MInt(5);
+            var a = new MTask((t) => num.Value == 4);
             a.OnComplete += () => { num.Value = 2; };
 
             a.Evaluate();
@@ -24,8 +24,8 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
         [Test]
         public void Task_Cancelled()
         {
-            var num = new DSInt(5);
-            var a = new DSTask((t) => num.Value == 4);
+            var num = new MInt(5);
+            var a = new MTask((t) => num.Value == 4);
             a.OnComplete += () => { num.Value = 2; };
             a.OnEnd += () => { num.Value = 3; };
             a.Cancel();
@@ -36,9 +36,9 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
         [Test]
         public void TaskStack_SingleCompleted()
         {
-            var taskStack = new DSTaskStack();
-            var num = new DSInt(5);
-            var a = new DSTask((t) => num.Value == 4);
+            var taskStack = new MTaskStack();
+            var num = new MInt(5);
+            var a = new MTask((t) => num.Value == 4);
             a.OnComplete += () => num.Value = 0;
             taskStack.PushQueue(a);
             num.Value--;
@@ -51,10 +51,10 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
         [Test]
         public void TaskStack_TwoTasks()
         {
-            var taskStack = new DSTaskStack();
-            var num = new DSInt(5);
-            var a = new DSTask((t) => num.Value == 4);
-            var b = new DSTask((t) => num.Value == 3);
+            var taskStack = new MTaskStack();
+            var num = new MInt(5);
+            var a = new MTask((t) => num.Value == 4);
+            var b = new MTask((t) => num.Value == 3);
             b.OnComplete += () => num.Value = 0;
             taskStack.PushQueue(a);
             taskStack.PushQueue(b);
@@ -74,11 +74,11 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
         [Test]
         public void TaskStack_TwoTasksThenOne()
         {
-            var taskStack = new DSTaskStack();
-            var num = new DSInt(5);
-            var a = new DSTask((t) => num.Value == 4);
-            var b = new DSTask((t) => num.Value == 3);
-            var c = new DSTask((t) => num.Value == 2);
+            var taskStack = new MTaskStack();
+            var num = new MInt(5);
+            var a = new MTask((t) => num.Value == 4);
+            var b = new MTask((t) => num.Value == 3);
+            var c = new MTask((t) => num.Value == 2);
             c.OnComplete += () => num.Value = 0;
             taskStack.PushQueue(a);
             taskStack.PushQueue(b);
@@ -104,11 +104,11 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
         [Test]
         public void TaskStack_ThreeQueuedTwoCapacity()
         {
-            var taskStack = new DSTaskStack();
-            var num = new DSInt(5);
-            var a = new DSTask((t) => num.Value == 4);
-            var b = new DSTask((t) => num.Value == 3);
-            var c = new DSTask((t) => num.Value == 2);
+            var taskStack = new MTaskStack();
+            var num = new MInt(5);
+            var a = new MTask((t) => num.Value == 4);
+            var b = new MTask((t) => num.Value == 3);
+            var c = new MTask((t) => num.Value == 2);
             c.OnComplete += () => num.Value = 0;
             taskStack.PushQueue(a);
             taskStack.PushQueue(b);
@@ -122,11 +122,11 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
         [Test]
         public void TaskStack_ThreeQueuedThreeCapacity()
         {
-            var taskStack = new DSTaskStack(3);
-            var num = new DSInt(5);
-            var a = new DSTask((t) => num.Value == 4);
-            var b = new DSTask((t) => num.Value == 3);
-            var c = new DSTask((t) => num.Value == 2);
+            var taskStack = new MTaskStack(3);
+            var num = new MInt(5);
+            var a = new MTask((t) => num.Value == 4);
+            var b = new MTask((t) => num.Value == 3);
+            var c = new MTask((t) => num.Value == 2);
             c.OnComplete += () => num.Value = 0;
             taskStack.PushQueue(a);
             taskStack.PushQueue(b);
@@ -140,11 +140,11 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Tasks
         [Test]
         public void TaskStack_TwoTasksImmediateOne()
         {
-            var taskStack = new DSTaskStack();
-            var num = new DSInt(5);
-            var a = new DSTask((t) => num.Value == 4);
-            var b = new DSTask((t) => num.Value == 3);
-            var c = new DSTask((t) => num.Value == 2);
+            var taskStack = new MTaskStack();
+            var num = new MInt(5);
+            var a = new MTask((t) => num.Value == 4);
+            var b = new MTask((t) => num.Value == 3);
+            var c = new MTask((t) => num.Value == 2);
             c.OnComplete += () => num.Value = 0;
             taskStack.PushQueue(a);
             taskStack.PushQueue(b);

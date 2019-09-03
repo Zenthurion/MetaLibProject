@@ -1,24 +1,24 @@
-using DwarvenSoftware.Framework.Inventory;
+using MetaLib.Inventory;
 using NUnit.Framework;
 
-namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
+namespace MetaLib.Editor.Tests.Inventory
 {
     public class StorageCapacityProviderTests
     {
         [Test]
         public void StorageProvider_SimpleCapacity()
         {
-            var provider = new DSSimpleStorageCapacityProvider(5);
-            var inventory = new DSListInventory(provider);
+            var provider = new MSimpleStorageCapacityProvider(5);
+            var inventory = new MListInventory(provider);
             
             Assert.AreEqual(5, inventory.Capacity);
         }
         [Test]
         public void StorageProvider_SimpleCapacityChange()
         {
-            var provider1 = new DSSimpleStorageCapacityProvider(5);
-            var inventory = new DSListInventory(provider1);
-            var provider2 = new DSSimpleStorageCapacityProvider(15);
+            var provider1 = new MSimpleStorageCapacityProvider(5);
+            var inventory = new MListInventory(provider1);
+            var provider2 = new MSimpleStorageCapacityProvider(15);
             inventory.SetCapacityProvider(provider2);
             
             Assert.AreEqual(15, inventory.Capacity);
@@ -26,8 +26,8 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
         [Test]
         public void StorageProvider_CompositeCapacity()
         {
-            var provider1 = new DSCompositeStorageCapacityProvider(new DSSimpleStorageCapacityProvider(5), new DSSimpleStorageCapacityProvider(5));
-            var inventory = new DSListInventory(provider1);
+            var provider1 = new MCompositeStorageCapacityProvider(new MSimpleStorageCapacityProvider(5), new MSimpleStorageCapacityProvider(5));
+            var inventory = new MListInventory(provider1);
 
             
             Assert.AreEqual(10, inventory.Capacity);

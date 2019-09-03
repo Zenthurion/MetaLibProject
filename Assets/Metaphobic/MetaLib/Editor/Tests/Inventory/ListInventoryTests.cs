@@ -1,8 +1,8 @@
-using DwarvenSoftware.Framework.Inventory;
+using MetaLib.Inventory;
 using NSubstitute;
 using NUnit.Framework;
 
-namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
+namespace MetaLib.Editor.Tests.Inventory
 {
     public class ListInventoryTests
     {
@@ -11,7 +11,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
         {
             var provider = Substitute.For<IStorageCapacityProvider>();
             provider.Capacity.Returns(0);
-            IInventory inventory = new DSListInventory(provider);
+            IInventory inventory = new MListInventory(provider);
             
             Assert.Zero(inventory.Capacity);
             Assert.Zero(inventory.Count);
@@ -22,7 +22,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
         {
             var provider = Substitute.For<IStorageCapacityProvider>();
             provider.Capacity.Returns(0);
-            IInventory inventory = new DSListInventory(provider);
+            IInventory inventory = new MListInventory(provider);
 
             var item = Substitute.For<IInventoryItem>();
             
@@ -36,7 +36,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
         {
             var provider = Substitute.For<IStorageCapacityProvider>();
             provider.Capacity.Returns(0);
-            IInventory inventory = new DSListInventory(provider);
+            IInventory inventory = new MListInventory(provider);
 
             var item = Substitute.For<IInventoryStack>();
             item.Capacity.Returns(2);
@@ -51,7 +51,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
         {
             var provider = Substitute.For<IStorageCapacityProvider>();
             provider.Capacity.Returns(10);
-            IInventory inventory = new DSListInventory(provider);
+            IInventory inventory = new MListInventory(provider);
 
             var item = Substitute.For<IInventoryItem>();
             
@@ -65,7 +65,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
         {
             var provider = Substitute.For<IStorageCapacityProvider>();
             provider.Capacity.Returns(10);
-            IInventory inventory = new DSListInventory(provider);
+            IInventory inventory = new MListInventory(provider);
 
             var item = Substitute.For<IInventoryStack>();
             item.Capacity.Returns(2);
@@ -81,7 +81,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
         {
             var provider = Substitute.For<IStorageCapacityProvider>();
             provider.Capacity.Returns(10);
-            IInventory inventory = new DSListInventory(provider);
+            IInventory inventory = new MListInventory(provider);
 
             var item = Substitute.For<IInventoryItem>();
             
@@ -96,7 +96,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
         {
             var provider = Substitute.For<IStorageCapacityProvider>();
             provider.Capacity.Returns(10);
-            IInventory inventory = new DSListInventory(provider);
+            IInventory inventory = new MListInventory(provider);
 
             var item1 = Substitute.For<IInventoryItem>();
             
@@ -113,7 +113,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
         {
             var provider = Substitute.For<IStorageCapacityProvider>();
             provider.Capacity.Returns(10);
-            IInventory inventory = new DSListInventory(provider);
+            IInventory inventory = new MListInventory(provider);
 
             var item1 = Substitute.For<IInventoryItem>();
             
@@ -132,7 +132,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
         {
             var provider = Substitute.For<IStorageCapacityProvider>();
             provider.Capacity.Returns(10);
-            IInventory inventory = new DSUniqueInventory(provider);
+            IInventory inventory = new MUniqueInventory(provider);
 
             var item1 = Substitute.For<IInventoryItem>();
             
@@ -151,7 +151,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
         {
             var provider = Substitute.For<IStorageCapacityProvider>();
             provider.Capacity.Returns(10);
-            IInventory inventory = new DSUniqueInventory(provider);
+            IInventory inventory = new MUniqueInventory(provider);
 
             var item1 = Substitute.For<IInventoryStack>();
             item1.Capacity.Returns(1);
@@ -172,7 +172,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
         {
             var provider = Substitute.For<IStorageCapacityProvider>();
             provider.Capacity.Returns(10);
-            IInventory inventory = new DSListInventory(provider);
+            IInventory inventory = new MListInventory(provider);
 
             var item1 = Substitute.For<IInventoryStack>();
             item1.Capacity.Returns(4);
@@ -189,7 +189,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
         {
             var provider = Substitute.For<IStorageCapacityProvider>();
             provider.Capacity.Returns(10);
-            IInventory inventory = new DSListInventory(provider);
+            IInventory inventory = new MListInventory(provider);
 
             var item1 = Substitute.For<IInventoryStack>();
             item1.Capacity.Returns(4);
@@ -207,7 +207,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Inventory
         {
             var provider = Substitute.For<IStorageCapacityProvider>();
             provider.Capacity.Returns(2);
-            IInventory inventory = new DSListInventory(provider);
+            IInventory inventory = new MListInventory(provider);
 
             var item1 = Substitute.For<IInventoryStack>();
             item1.Capacity.Returns(4);

@@ -1,14 +1,14 @@
-using DwarvenSoftware.Framework.Achievements;
-using DwarvenSoftware.Framework.Events;
+using MetaLib.Achievements;
+using MetaLib.Events;
 
-namespace DwarvenSoftware.Framework.Editor.Tests.Achievements
+namespace MetaLib.Editor.Tests.Achievements
 {
-    internal class StatDSAchievementTest : DSStatAchievement
+    internal class StatMAchievementTest : MStatAchievement
     {
-        public StatDSAchievementTest(int objectiveTarget, string name = "", string description = "") : base(name,
+        public StatMAchievementTest(int objectiveTarget, string name = "", string description = "") : base(name,
             description, objectiveTarget)
         {
-            DSEvents.Add<TestEvent>(AchievementProgressed);
+            MEvents.Add<TestEvent>(AchievementProgressed);
         }
 
         private void AchievementProgressed(TestEvent e)
@@ -17,7 +17,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Achievements
         }
     }
 
-    internal class TestEvent : GameEvent
+    internal class TestEvent : MetaEvent
     {
         public readonly int Value;
 

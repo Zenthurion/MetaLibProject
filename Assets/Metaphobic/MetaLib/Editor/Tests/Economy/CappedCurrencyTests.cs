@@ -1,7 +1,7 @@
-using DwarvenSoftware.Framework.Economy;
+using MetaLib.Economy;
 using NUnit.Framework;
 
-namespace DwarvenSoftware.Framework.Editor.Tests.Economy
+namespace MetaLib.Editor.Tests.Economy
 {
     public class CappedCurrencyTests
     {
@@ -9,7 +9,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Economy
         public void CappedCurrency_AddValueCorrect()
         {
             var capacity = new CappedCurrencyCapacity(5, 10, 15);
-            ICurrency currency = new DSCappedCurrency("Ice", capacity);
+            ICurrency currency = new MCappedCurrency("Ice", capacity);
 
             var valueToAdd = 2;
 
@@ -22,7 +22,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Economy
         public void CappedCurrency_AddValueRestricted()
         {
             var capacity = new CappedCurrencyCapacity(5, 10, 15);
-            ICappedCurrency currency = new DSCappedCurrency("Ice", capacity);
+            ICappedCurrency currency = new MCappedCurrency("Ice", capacity);
 
             var valueToAdd = 7;
 

@@ -1,11 +1,11 @@
-using DwarvenSoftware.Framework.Core;
+using MetaLib.Core;
 
-namespace DwarvenSoftware.Framework.Interaction
+namespace MetaLib.Interaction
 {
     public interface ISelectable
     {
-        event DSEvent<ISelectable> OnSelected;
-        event DSEvent<ISelectable> OnDeselected;
+        event MEvent<ISelectable> OnSelected;
+        event MEvent<ISelectable> OnDeselected;
         
         bool IsSelectable { get; }
         bool IsSelected { get; }

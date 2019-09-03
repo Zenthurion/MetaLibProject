@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using DwarvenSoftware.Framework.Economy;
+using MetaLib.Economy;
 using NUnit.Framework;
 
-namespace DwarvenSoftware.Framework.Editor.Tests.Economy
+namespace MetaLib.Editor.Tests.Economy
 {
     public class UpgradableCurrencyTests
     {
@@ -10,7 +10,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Economy
         public void UpgradableCurrency_UpgradeSuccessful()
         {
             var capacity = new CappedCurrencyCapacity(5, 10, 15);
-            IUpgradableCurrency currency = new DSCappedCurrency("Ice", capacity);
+            IUpgradableCurrency currency = new MCappedCurrency("Ice", capacity);
 
             Assert.IsTrue(currency.TryUpgradeCapacity());
         }
@@ -19,7 +19,7 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Economy
         public void UpgradableCurrency_UpgradeUnsuccessful()
         {
             var capacity = new CappedCurrencyCapacity(5, 10, 15);
-            IUpgradableCurrency currency = new DSCappedCurrency("Ice", capacity);
+            IUpgradableCurrency currency = new MCappedCurrency("Ice", capacity);
 
             Assert.IsTrue(currency.TryUpgradeCapacity());
             Assert.IsTrue(currency.TryUpgradeCapacity());
@@ -30,10 +30,10 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Economy
         public void UpgradableCurrency_CapacityParamsAndListsAreEqual()
         {
             var capacityParams = new CappedCurrencyCapacity(5, 10, 15);
-            IUpgradableCurrency currency1 = new DSCappedCurrency("Ice", capacityParams);
+            IUpgradableCurrency currency1 = new MCappedCurrency("Ice", capacityParams);
 
             var capacityList = new CappedCurrencyCapacity(new List<long> {5, 10, 15});
-            IUpgradableCurrency currency2 = new DSCappedCurrency("Ice", capacityList);
+            IUpgradableCurrency currency2 = new MCappedCurrency("Ice", capacityList);
 
             currency1.TryUpgradeCapacity();
             currency2.TryUpgradeCapacity();

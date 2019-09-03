@@ -1,8 +1,8 @@
-using DwarvenSoftware.Framework.Events;
+using MetaLib.Events;
 
-namespace DwarvenSoftware.Framework.Economy.Events
+namespace MetaLib.Economy.Events
 {
-    public class CurrencyEvent : GameEvent
+    public class CurrencyEvent : MetaEvent
     {
         protected CurrencyEvent(ICurrency currency)
         {

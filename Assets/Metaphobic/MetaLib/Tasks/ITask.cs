@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DwarvenSoftware.Framework.Tasks
+namespace MetaLib.Tasks
 {
     public delegate void TaskEvent();
 

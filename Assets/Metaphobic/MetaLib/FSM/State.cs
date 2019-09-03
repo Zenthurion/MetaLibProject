@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DwarvenSoftware.Framework.FSM
+namespace MetaLib.FSM
 {
     public abstract class State : IState
     {

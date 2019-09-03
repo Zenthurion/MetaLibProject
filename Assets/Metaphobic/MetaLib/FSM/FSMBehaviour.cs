@@ -1,7 +1,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace DwarvenSoftware.Framework.FSM
+namespace MetaLib.FSM
 {
     public class FSMBehaviour : MonoBehaviour
     {

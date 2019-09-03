@@ -1,4 +1,4 @@
-namespace DwarvenSoftware.Framework.Data
+namespace MetaLib.Data
 {
     public interface ISaveable
     {

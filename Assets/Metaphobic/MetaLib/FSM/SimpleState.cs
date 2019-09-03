@@ -1,4 +1,4 @@
-namespace DwarvenSoftware.Framework.FSM
+namespace MetaLib.FSM
 {
     public delegate void StateEvent<T>(T state) where T : IState;
 

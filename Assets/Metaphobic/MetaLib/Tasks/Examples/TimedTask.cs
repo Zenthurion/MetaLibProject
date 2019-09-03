@@ -1,7 +1,7 @@
-﻿using DwarvenSoftware.Framework.FSM;
+﻿using MetaLib.FSM;
 using UnityEngine;
 
-namespace DwarvenSoftware.Framework.Tasks.Examples
+namespace MetaLib.Tasks.Examples
 {
     [RequireComponent(typeof(MeshRenderer))]
     public class TimedTask : FSMBehaviour
@@ -14,14 +14,14 @@ namespace DwarvenSoftware.Framework.Tasks.Examples
 
         public string current = "";
 
-        private DSTaskStack _tasks;
+        private MTaskStack _tasks;
 
         protected override void Awake()
         {
             base.Awake();
             _renderer = GetComponent<MeshRenderer>();
 
-            _tasks = new DSTaskStack();
+            _tasks = new MTaskStack();
 
             _red = new SimpleState(FSM, "red");
             _green = new SimpleState(FSM, "green");
@@ -73,7 +73,7 @@ namespace DwarvenSoftware.Framework.Tasks.Examples
             {
                 FSM.ChangeState(_green);
                 Debug.Log("Green");
-                var task = new DSTimerTask((t) => t is DSTimerTask tt && tt.Timer.Elapsed > 2);
+                var task = new MTimerTask((t) => t is MTimerTask tt && tt.Timer.Elapsed > 2);
                 task.OnComplete += () => FSM.ChangeState(_blue);
                 task.Timer.Start();
                 _tasks.PushQueue(task);

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace DwarvenSoftware.Framework.Quests
+namespace MetaLib.Quests
 {
     public interface IQuest
     {

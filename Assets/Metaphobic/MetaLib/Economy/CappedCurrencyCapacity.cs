@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace DwarvenSoftware.Framework.Economy
+namespace MetaLib.Economy
 {
     public class CappedCurrencyCapacity : ICurrencyCapacity
     {

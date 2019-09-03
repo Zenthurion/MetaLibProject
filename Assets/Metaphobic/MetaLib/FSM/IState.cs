@@ -1,4 +1,4 @@
-namespace DwarvenSoftware.Framework.FSM
+namespace MetaLib.FSM
 {
     public interface IState
     {

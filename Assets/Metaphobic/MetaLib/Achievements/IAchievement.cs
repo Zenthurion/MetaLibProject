@@ -1,6 +1,6 @@
 using System;
 
-namespace DwarvenSoftware.Framework.Achievements
+namespace MetaLib.Achievements
 {
     public interface IAchievement
     {

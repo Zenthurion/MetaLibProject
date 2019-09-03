@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace DwarvenSoftware.Framework.FSM.Examples
+namespace MetaLib.FSM.Examples
 {
     [RequireComponent(typeof(MeshRenderer))]
     public class SimpleStateExample : FSMBehaviour

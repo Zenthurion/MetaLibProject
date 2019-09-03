@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="10839a61-454a-4b2d-a8c4-e5d26e571f9e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MBool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MFloat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MInt.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/MTimerTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/DSAchievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/MAchievement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/DSAchievement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/MAchievement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/DSCompositeAchievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/MCompositeAchievement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/DSCompositeAchievement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/MCompositeAchievement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/DSStatAchievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/MStatAchievement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/DSStatAchievement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/MStatAchievement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/IAchievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/IAchievement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/DSBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MetaBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/DSBehaviour.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MetaBehaviour.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/DSBool.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/DSBool.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MBool.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/DSEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/DSEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MEvent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/DSFloat.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/DSFloat.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MFloat.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/DSInt.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/DSInt.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MInt.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/DSSingleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MetaSingleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/DSSingleton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MetaSingleton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/DSValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MValue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/DSValue.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MValue.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/DSData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/MData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/DSData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/MData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/ILoadable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/ILoadable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/ISaveDataBundle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/ISaveDataBundle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/ISaveable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/ISaveable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/SaveDataBundle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/SaveDataBundle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/CappedCurrencyCapacity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/CappedCurrencyCapacity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/CompositeCurrency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/CompositeCurrency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/DSCappedCurrency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/MCappedCurrency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/DSCappedCurrency.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/MCappedCurrency.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/DSCurrency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/MCurrency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/DSCurrency.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/MCurrency.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/DSEconomy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/MEconomy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/DSEconomy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/MEconomy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/CurrencyAddedEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/CurrencyAddedEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/CurrencyChangedEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/CurrencyChangedEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/CurrencyEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/CurrencyEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/CurrencyInsufficientEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/CurrencyInsufficientEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/CurrencySpentEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/CurrencySpentEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/UpgradableCurrencyUpgradeEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/UpgradableCurrencyUpgradeEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/UpgradableCurrencyUpgradeFailedEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/UpgradableCurrencyUpgradeFailedEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/UpgradableCurrencyUpgradeSuccessEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/Events/UpgradableCurrencyUpgradeSuccessEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/ICappedCurrency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/ICappedCurrency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/ICompositeCurrency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/ICompositeCurrency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/ICurrency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/ICurrency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/ICurrencyCapacity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/ICurrencyCapacity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/ICurrencyCapacityProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/ICurrencyCapacityProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/IUpgradableCurrency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/IUpgradableCurrency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Achievements/AchievementsTestClasses.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Achievements/AchievementsTestClasses.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Achievements/CompositeAchievementTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Achievements/CompositeAchievementTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Achievements/StatAchievementTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Achievements/StatAchievementTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Economy/CappedCurrencyTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Economy/CappedCurrencyTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Economy/CompositeCurrencyTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Economy/CompositeCurrencyTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Economy/CurrencyEventTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Economy/CurrencyEventTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Economy/CurrencyTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Economy/CurrencyTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Economy/UpgradableCurrencyTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Economy/UpgradableCurrencyTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Events/EventTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Events/EventTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Inventory/ListInventoryTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Inventory/ListInventoryTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Inventory/StorageCapacityProviderTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Inventory/StorageCapacityProviderTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Inventory/UniqueInventoryTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Inventory/UniqueInventoryTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Tasks/TaskTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Editor/Tests/Tasks/TaskTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Events/DSEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Events/MEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Events/DSEvents.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Events/MEvents.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Events/DSEventsGroup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Events/DSEventsGroup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Events/IEventsGroup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Events/IEventsGroup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/Examples/SimpleStateExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/Examples/SimpleStateExample.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/FSMBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/FSMBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/FiniteStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/FiniteStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/IFiniteStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/IFiniteStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/IState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/IState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/ITransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/ITransition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/SimpleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/SimpleState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/State.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/StatePhase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/StatePhase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/Transition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/FSM/Transition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Interaction/DSSelections.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Interaction/MetaSelections.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Interaction/DSSelections.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Interaction/MetaSelections.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Interaction/IHighlightable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Interaction/IHighlightable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Interaction/ISelectable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Interaction/ISelectable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/DSCompositeStorageCapacityProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MCompositeStorageCapacityProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/DSCompositeStorageCapacityProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MCompositeStorageCapacityProvider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/DSInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MInventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/DSInventory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MInventory.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/DSListInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MListInventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/DSListInventory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MListInventory.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/DSSimpleStorageCapacityProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MSimpleStorageCapacityProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/DSSimpleStorageCapacityProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MSimpleStorageCapacityProvider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/DSUniqueInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MUniqueInventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/DSUniqueInventory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MUniqueInventory.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/IInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/IInventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/IInventoryItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/IInventoryItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/IInventoryStack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/IInventoryStack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/IStorageCapacityProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/IStorageCapacityProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/InventoryItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/InventoryItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/InventoryStack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/InventoryStack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/TransactionResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/TransactionResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Objectives/IObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Objectives/IObjective.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Prefs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Quests/IQuest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Quests/IQuest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/DSTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/MTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/DSTask.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/MTask.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/DSTaskStack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/MTaskStack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/DSTaskStack.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/MTaskStack.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/DSTimerTask.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/DSTimerTask.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/MTimerTask.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/Examples/BasicTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/Examples/BasicTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/Examples/TimedTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/Examples/TimedTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/ITask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/ITask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/ITaskStack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/ITaskStack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Utils/DSTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Utils/MTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Utils/DSTimer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Utils/MTimer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Utils/DSUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Utils/DSUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/MData.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+              <folding>
+                <marker date="1567537299405" expanded="true" signature="22:520" ph="{...}" />
+                <marker date="1567537299405" expanded="true" signature="104:518" ph="{...}" />
+                <marker date="1567537299405" expanded="true" signature="185:245" ph="{...}" />
+                <marker date="1567537299405" expanded="true" signature="317:377" ph="{...}" />
+                <marker date="1567537299405" expanded="true" signature="452:512" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Events/MEvents.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+              <folding>
+                <marker date="1567537931581" expanded="false" signature="6:66" ph="..." />
+                <marker date="1567537931581" expanded="true" signature="92:2982" ph="{...}" />
+                <marker date="1567537931581" expanded="true" signature="130:142" ph="{...}" />
+                <marker date="1567537931581" expanded="true" signature="148:243" ph="/* Code based on gist by wmiller: ... */" />
+                <marker date="1567537931581" expanded="true" signature="268:2980" ph="{...}" />
+                <marker date="1567537931581" expanded="true" signature="605:699" ph="{...}" />
+                <marker date="1567537931581" expanded="true" signature="727:933" ph="{...}" />
+                <marker date="1567537931581" expanded="true" signature="815:922" ph="{...}" />
+                <marker date="1567537931581" expanded="true" signature="1208:1467" ph="{...}" />
+                <marker date="1567537931581" expanded="true" signature="1234:1402" ph="{...}" />
+                <marker date="1567537931581" expanded="true" signature="1556:1835" ph="{...}" />
+                <marker date="1567537931581" expanded="true" signature="1619:1747" ph="{...}" />
+                <marker date="1567537931581" expanded="true" signature="1959:2021" ph="{...}" />
+                <marker date="1567537931581" expanded="true" signature="2144:2218" ph="{...}" />
+                <marker date="1567537931581" expanded="true" signature="2345:2410" ph="{...}" />
+                <marker date="1567537931581" expanded="true" signature="2536:2613" ph="{...}" />
+                <marker date="1567537931581" expanded="true" signature="2697:2817" ph="{...}" />
+                <marker date="1567537931581" expanded="true" signature="2913:2974" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MSimpleStorageCapacityProvider.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+              <folding>
+                <marker date="1567537931646" expanded="true" signature="27:269" ph="{...}" />
+                <marker date="1567537931646" expanded="true" signature="104:267" ph="{...}" />
+                <marker date="1567537931646" expanded="true" signature="208:261" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MCompositeStorageCapacityProvider.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <folding>
+                <marker date="1567537931680" expanded="false" signature="6:52" ph="..." />
+                <marker date="1567537931680" expanded="true" signature="81:771" ph="{...}" />
+                <marker date="1567537931680" expanded="true" signature="161:769" ph="{...}" />
+                <marker date="1567537931680" expanded="true" signature="413:509" ph="{...}" />
+                <marker date="1567537931680" expanded="true" signature="612:763" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MUniqueInventory.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <folding>
+                <marker date="1567537931686" expanded="true" signature="27:2249" ph="{...}" />
+                <marker date="1567537931686" expanded="true" signature="76:2247" ph="{...}" />
+                <marker date="1567537931686" expanded="true" signature="182:215" ph="{...}" />
+                <marker date="1567537931686" expanded="true" signature="302:1165" ph="{...}" />
+                <marker date="1567537931686" expanded="true" signature="409:766" ph="{...}" />
+                <marker date="1567537931686" expanded="true" signature="810:1097" ph="{...}" />
+                <marker date="1567537931686" expanded="true" signature="910:1083" ph="{...}" />
+                <marker date="1567537931686" expanded="true" signature="1264:1977" ph="{...}" />
+                <marker date="1567537931686" expanded="true" signature="1452:1802" ph="{...}" />
+                <marker date="1567537931686" expanded="true" signature="1510:1689" ph="{...}" />
+                <marker date="1567537931686" expanded="true" signature="1710:1788" ph="{...}" />
+                <marker date="1567537931686" expanded="true" signature="1819:1910" ph="{...}" />
+                <marker date="1567537931686" expanded="true" signature="2035:2241" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MInventory.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+              <folding>
+                <marker date="1567538320597" expanded="false" signature="6:100" ph="..." />
+                <marker date="1567538320597" expanded="true" signature="129:2883" ph="{...}" />
+                <marker date="1567538320597" expanded="true" signature="181:2881" ph="{...}" />
+                <marker date="1567538320597" expanded="true" signature="505:680" ph="{...}" />
+                <marker date="1567538320597" expanded="true" signature="743:842" ph="{...}" />
+                <marker date="1567538320597" expanded="true" signature="916:1164" ph="{...}" />
+                <marker date="1567538320597" expanded="true" signature="966:1128" ph="{...}" />
+                <marker date="1567538320597" expanded="true" signature="1236:1532" ph="{...}" />
+                <marker date="1567538320597" expanded="true" signature="1323:1495" ph="{...}" />
+                <marker date="1567538320597" expanded="true" signature="1579:1678" ph="{...}" />
+                <marker date="1567538320597" expanded="true" signature="1727:1832" ph="{...}" />
+                <marker date="1567538320597" expanded="true" signature="1893:1962" ph="{...}" />
+                <marker date="1567538320597" expanded="true" signature="2063:2479" ph="{...}" />
+                <marker date="1567538320597" expanded="true" signature="2565:2626" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/MTask.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <folding>
+                <marker date="1567537931782" expanded="true" signature="38:734" ph="{...}" />
+                <marker date="1567537931782" expanded="true" signature="71:732" ph="{...}" />
+                <marker date="1567537931782" expanded="true" signature="258:325" ph="{...}" />
+                <marker date="1567537931782" expanded="true" signature="406:462" ph="{...}" />
+                <marker date="1567537931782" expanded="true" signature="502:647" ph="{...}" />
+                <marker date="1567537931782" expanded="true" signature="677:726" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/MTaskStack.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+              <folding>
+                <marker date="1567537931673" expanded="true" signature="58:1680" ph="{...}" />
+                <marker date="1567537931673" expanded="true" signature="101:1678" ph="{...}" />
+                <marker date="1567537931673" expanded="true" signature="245:347" ph="{...}" />
+                <marker date="1567537931673" expanded="true" signature="379:432" ph="{...}" />
+                <marker date="1567537931673" expanded="true" signature="462:513" ph="{...}" />
+                <marker date="1567537931673" expanded="true" signature="568:687" ph="{...}" />
+                <marker date="1567537931673" expanded="true" signature="720:851" ph="{...}" />
+                <marker date="1567537931673" expanded="true" signature="902:1273" ph="{...}" />
+                <marker date="1567537931673" expanded="true" signature="947:1049" ph="{...}" />
+                <marker date="1567537931673" expanded="true" signature="1089:1151" ph="{...}" />
+                <marker date="1567537931673" expanded="true" signature="1168:1236" ph="{...}" />
+                <marker date="1567537931673" expanded="true" signature="1308:1452" ph="{...}" />
+                <marker date="1567537931673" expanded="true" signature="1363:1442" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Utils/MTimer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <folding>
+                <marker date="1567537931810" expanded="false" signature="6:50" ph="..." />
+                <marker date="1567537931810" expanded="true" signature="75:898" ph="{...}" />
+                <marker date="1567537931810" expanded="true" signature="101:896" ph="{...}" />
+                <marker date="1567537931810" expanded="true" signature="295:349" ph="{...}" />
+                <marker date="1567537931810" expanded="true" signature="386:473" ph="{...}" />
+                <marker date="1567537931810" expanded="true" signature="509:707" ph="{...}" />
+                <marker date="1567537931810" expanded="true" signature="577:697" ph="{...}" />
+                <marker date="1567537931810" expanded="true" signature="735:785" ph="{...}" />
+                <marker date="1567537931810" expanded="true" signature="814:890" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/ISaveDataBundle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MInventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MCompositeStorageCapacityProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Utils/MTimer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/MCappedCurrency.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/MAchievement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MetaBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MUniqueInventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/MCurrency.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MValue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/MEconomy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/MTask.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/MTaskStack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Events/MEvents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/MData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MSimpleStorageCapacityProvider.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/DSData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/MData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/ISaveDataBundle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/MEconomy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/MCappedCurrency.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/MCurrency.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MetaBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MValue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/MAchievement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Events/DSEvents.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Events/MEvents.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MSimpleStorageCapacityProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MCompositeStorageCapacityProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/MTask.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/MTaskStack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Utils/MTimer.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.idea.MetaLibProject/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/.idea.MetaLibProject/.idea/indexLayout.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Metaphobic" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Metaphobic" type="1045f7f1:UnityExplorerNode" />
+              <item name="MetaLib" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Metaphobic" type="1045f7f1:UnityExplorerNode" />
+              <item name="MetaLib" type="1045f7f1:UnityExplorerNode" />
+              <item name="Core" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Metaphobic" type="1045f7f1:UnityExplorerNode" />
+              <item name="MetaLib" type="1045f7f1:UnityExplorerNode" />
+              <item name="Events" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Metaphobic" type="1045f7f1:UnityExplorerNode" />
+              <item name="MetaLib" type="1045f7f1:UnityExplorerNode" />
+              <item name="FSM" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Metaphobic" type="1045f7f1:UnityExplorerNode" />
+              <item name="MetaLib" type="1045f7f1:UnityExplorerNode" />
+              <item name="Interaction" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Metaphobic" type="1045f7f1:UnityExplorerNode" />
+              <item name="MetaLib" type="1045f7f1:UnityExplorerNode" />
+              <item name="Inventory" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Metaphobic" type="1045f7f1:UnityExplorerNode" />
+              <item name="MetaLib" type="1045f7f1:UnityExplorerNode" />
+              <item name="Objectives" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Metaphobic" type="1045f7f1:UnityExplorerNode" />
+              <item name="MetaLib" type="1045f7f1:UnityExplorerNode" />
+              <item name="Quests" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Metaphobic" type="1045f7f1:UnityExplorerNode" />
+              <item name="MetaLib" type="1045f7f1:UnityExplorerNode" />
+              <item name="Tasks" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Metaphobic" type="1045f7f1:UnityExplorerNode" />
+              <item name="MetaLib" type="1045f7f1:UnityExplorerNode" />
+              <item name="Utils" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10839a61-454a-4b2d-a8c4-e5d26e571f9e" name="Default Changelist" comment="" />
+      <created>1567537707785</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567537707785</updated>
+      <workItem from="1567537709344" duration="659000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="659000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12786362" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/ISaveDataBundle.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <marker date="1567538239931" expanded="true" signature="49:188" ph="{...}" />
+            <marker date="1567538239931" expanded="true" signature="102:186" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/MEconomy.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding>
+            <marker date="1567538240061" expanded="false" signature="6:47" ph="..." />
+            <marker date="1567538240061" expanded="true" signature="74:1095" ph="{...}" />
+            <marker date="1567538240061" expanded="true" signature="102:1093" ph="{...}" />
+            <marker date="1567538240061" expanded="true" signature="250:333" ph="{...}" />
+            <marker date="1567538240061" expanded="true" signature="553:795" ph="{...}" />
+            <marker date="1567538240061" expanded="true" signature="851:1087" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/MCappedCurrency.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+          <folding>
+            <marker date="1567538292571" expanded="false" signature="6:80" ph="..." />
+            <marker date="1567538292571" expanded="true" signature="107:1143" ph="{...}" />
+            <marker date="1567538292571" expanded="true" signature="175:1141" ph="{...}" />
+            <marker date="1567538292571" expanded="true" signature="376:453" ph="{...}" />
+            <marker date="1567538292571" expanded="true" signature="599:757" ph="{...}" />
+            <marker date="1567538292571" expanded="true" signature="799:1135" ph="{...}" />
+            <marker date="1567538292571" expanded="true" signature="855:997" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Economy/MCurrency.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <marker date="1567538292583" expanded="false" signature="6:94" ph="..." />
+            <marker date="1567538292583" expanded="true" signature="121:1315" ph="{...}" />
+            <marker date="1567538292583" expanded="true" signature="162:1313" ph="{...}" />
+            <marker date="1567538292583" expanded="true" signature="232:304" ph="{...}" />
+            <marker date="1567538292583" expanded="true" signature="443:962" ph="{...}" />
+            <marker date="1567538292583" expanded="true" signature="666:824" ph="{...}" />
+            <marker date="1567538292583" expanded="true" signature="1008:1307" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MetaBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <marker date="1567538240688" expanded="true" signature="42:105" ph="{...}" />
+            <marker date="1567538240688" expanded="true" signature="91:103" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MValue.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <marker date="1567538241022" expanded="true" signature="22:383" ph="{...}" />
+            <marker date="1567538241022" expanded="true" signature="108:381" ph="{...}" />
+            <marker date="1567538241022" expanded="true" signature="164:327" ph="{...}" />
+            <marker date="1567538241022" expanded="true" signature="217:317" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Core/MEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding>
+            <marker date="1567538241220" expanded="true" signature="22:72" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Achievements/MAchievement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+          <folding>
+            <marker date="1567538241761" expanded="true" signature="45:1320" ph="{...}" />
+            <marker date="1567538241761" expanded="true" signature="101:1318" ph="{...}" />
+            <marker date="1567538241761" expanded="true" signature="252:399" ph="{...}" />
+            <marker date="1567538241761" expanded="true" signature="615:921" ph="{...}" />
+            <marker date="1567538241761" expanded="true" signature="684:911" ph="{...}" />
+            <marker date="1567538241761" expanded="true" signature="1007:1060" ph="{...}" />
+            <marker date="1567538241761" expanded="true" signature="1088:1137" ph="{...}" />
+            <marker date="1567538241761" expanded="true" signature="1167:1217" ph="{...}" />
+            <marker date="1567538241761" expanded="true" signature="1261:1312" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Data/MData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding>
+            <marker date="1567537299405" expanded="true" signature="22:520" ph="{...}" />
+            <marker date="1567537299405" expanded="true" signature="104:518" ph="{...}" />
+            <marker date="1567537299405" expanded="true" signature="185:245" ph="{...}" />
+            <marker date="1567537299405" expanded="true" signature="317:377" ph="{...}" />
+            <marker date="1567537299405" expanded="true" signature="452:512" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Events/MEvents.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+          <folding>
+            <marker date="1567537931581" expanded="false" signature="6:66" ph="..." />
+            <marker date="1567537931581" expanded="true" signature="92:2982" ph="{...}" />
+            <marker date="1567537931581" expanded="true" signature="130:142" ph="{...}" />
+            <marker date="1567537931581" expanded="true" signature="148:243" ph="/* Code based on gist by wmiller: ... */" />
+            <marker date="1567537931581" expanded="true" signature="268:2980" ph="{...}" />
+            <marker date="1567537931581" expanded="true" signature="605:699" ph="{...}" />
+            <marker date="1567537931581" expanded="true" signature="727:933" ph="{...}" />
+            <marker date="1567537931581" expanded="true" signature="815:922" ph="{...}" />
+            <marker date="1567537931581" expanded="true" signature="1208:1467" ph="{...}" />
+            <marker date="1567537931581" expanded="true" signature="1234:1402" ph="{...}" />
+            <marker date="1567537931581" expanded="true" signature="1556:1835" ph="{...}" />
+            <marker date="1567537931581" expanded="true" signature="1619:1747" ph="{...}" />
+            <marker date="1567537931581" expanded="true" signature="1959:2021" ph="{...}" />
+            <marker date="1567537931581" expanded="true" signature="2144:2218" ph="{...}" />
+            <marker date="1567537931581" expanded="true" signature="2345:2410" ph="{...}" />
+            <marker date="1567537931581" expanded="true" signature="2536:2613" ph="{...}" />
+            <marker date="1567537931581" expanded="true" signature="2697:2817" ph="{...}" />
+            <marker date="1567537931581" expanded="true" signature="2913:2974" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MSimpleStorageCapacityProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+          <folding>
+            <marker date="1567537931646" expanded="true" signature="27:269" ph="{...}" />
+            <marker date="1567537931646" expanded="true" signature="104:267" ph="{...}" />
+            <marker date="1567537931646" expanded="true" signature="208:261" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MCompositeStorageCapacityProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <marker date="1567537931680" expanded="false" signature="6:52" ph="..." />
+            <marker date="1567537931680" expanded="true" signature="81:771" ph="{...}" />
+            <marker date="1567537931680" expanded="true" signature="161:769" ph="{...}" />
+            <marker date="1567537931680" expanded="true" signature="413:509" ph="{...}" />
+            <marker date="1567537931680" expanded="true" signature="612:763" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MUniqueInventory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding>
+            <marker date="1567537931686" expanded="true" signature="27:2249" ph="{...}" />
+            <marker date="1567537931686" expanded="true" signature="76:2247" ph="{...}" />
+            <marker date="1567537931686" expanded="true" signature="182:215" ph="{...}" />
+            <marker date="1567537931686" expanded="true" signature="302:1165" ph="{...}" />
+            <marker date="1567537931686" expanded="true" signature="409:766" ph="{...}" />
+            <marker date="1567537931686" expanded="true" signature="810:1097" ph="{...}" />
+            <marker date="1567537931686" expanded="true" signature="910:1083" ph="{...}" />
+            <marker date="1567537931686" expanded="true" signature="1264:1977" ph="{...}" />
+            <marker date="1567537931686" expanded="true" signature="1452:1802" ph="{...}" />
+            <marker date="1567537931686" expanded="true" signature="1510:1689" ph="{...}" />
+            <marker date="1567537931686" expanded="true" signature="1710:1788" ph="{...}" />
+            <marker date="1567537931686" expanded="true" signature="1819:1910" ph="{...}" />
+            <marker date="1567537931686" expanded="true" signature="2035:2241" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Inventory/MInventory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <marker date="1567538320597" expanded="false" signature="6:100" ph="..." />
+            <marker date="1567538320597" expanded="true" signature="129:2883" ph="{...}" />
+            <marker date="1567538320597" expanded="true" signature="181:2881" ph="{...}" />
+            <marker date="1567538320597" expanded="true" signature="505:680" ph="{...}" />
+            <marker date="1567538320597" expanded="true" signature="743:842" ph="{...}" />
+            <marker date="1567538320597" expanded="true" signature="916:1164" ph="{...}" />
+            <marker date="1567538320597" expanded="true" signature="966:1128" ph="{...}" />
+            <marker date="1567538320597" expanded="true" signature="1236:1532" ph="{...}" />
+            <marker date="1567538320597" expanded="true" signature="1323:1495" ph="{...}" />
+            <marker date="1567538320597" expanded="true" signature="1579:1678" ph="{...}" />
+            <marker date="1567538320597" expanded="true" signature="1727:1832" ph="{...}" />
+            <marker date="1567538320597" expanded="true" signature="1893:1962" ph="{...}" />
+            <marker date="1567538320597" expanded="true" signature="2063:2479" ph="{...}" />
+            <marker date="1567538320597" expanded="true" signature="2565:2626" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/MTask.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <marker date="1567537931782" expanded="true" signature="38:734" ph="{...}" />
+            <marker date="1567537931782" expanded="true" signature="71:732" ph="{...}" />
+            <marker date="1567537931782" expanded="true" signature="258:325" ph="{...}" />
+            <marker date="1567537931782" expanded="true" signature="406:462" ph="{...}" />
+            <marker date="1567537931782" expanded="true" signature="502:647" ph="{...}" />
+            <marker date="1567537931782" expanded="true" signature="677:726" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Tasks/MTaskStack.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <marker date="1567537931673" expanded="true" signature="58:1680" ph="{...}" />
+            <marker date="1567537931673" expanded="true" signature="101:1678" ph="{...}" />
+            <marker date="1567537931673" expanded="true" signature="245:347" ph="{...}" />
+            <marker date="1567537931673" expanded="true" signature="379:432" ph="{...}" />
+            <marker date="1567537931673" expanded="true" signature="462:513" ph="{...}" />
+            <marker date="1567537931673" expanded="true" signature="568:687" ph="{...}" />
+            <marker date="1567537931673" expanded="true" signature="720:851" ph="{...}" />
+            <marker date="1567537931673" expanded="true" signature="902:1273" ph="{...}" />
+            <marker date="1567537931673" expanded="true" signature="947:1049" ph="{...}" />
+            <marker date="1567537931673" expanded="true" signature="1089:1151" ph="{...}" />
+            <marker date="1567537931673" expanded="true" signature="1168:1236" ph="{...}" />
+            <marker date="1567537931673" expanded="true" signature="1308:1452" ph="{...}" />
+            <marker date="1567537931673" expanded="true" signature="1363:1442" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Metaphobic/MetaLib/Utils/MTimer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <marker date="1567537931810" expanded="false" signature="6:50" ph="..." />
+            <marker date="1567537931810" expanded="true" signature="75:898" ph="{...}" />
+            <marker date="1567537931810" expanded="true" signature="101:896" ph="{...}" />
+            <marker date="1567537931810" expanded="true" signature="295:349" ph="{...}" />
+            <marker date="1567537931810" expanded="true" signature="386:473" ph="{...}" />
+            <marker date="1567537931810" expanded="true" signature="509:707" ph="{...}" />
+            <marker date="1567537931810" expanded="true" signature="577:697" ph="{...}" />
+            <marker date="1567537931810" expanded="true" signature="735:785" ph="{...}" />
+            <marker date="1567537931810" expanded="true" signature="814:890" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

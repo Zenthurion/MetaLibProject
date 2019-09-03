@@ -1,18 +1,18 @@
 using System;
 using System.Collections.Generic;
-using DwarvenSoftware.Framework.Economy;
-using DwarvenSoftware.Framework.Utils;
+using MetaLib.Economy;
+using MetaLib.Utils;
 using NUnit.Framework;
 
-namespace DwarvenSoftware.Framework.Editor.Tests.Economy
+namespace MetaLib.Editor.Tests.Economy
 {
     public class CurrencyTests
     {
         [Test]
         public void Currency_AddValueCorrect()
         {
-            var name = DSUtils.GetRandomString();
-            ICurrency currency = new DSCurrency(name);
+            var name = MUtils.GetRandomString();
+            ICurrency currency = new MCurrency(name);
 
             currency.Add(1000);
 
@@ -22,18 +22,18 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Economy
         [Test]
         public void Economy_AddCurrency()
         {
-            var name = DSUtils.GetRandomString();
-            ICurrency currency = new DSCurrency(name);
-            DSEconomy.Instance.AddCurrency(currency);
+            var name = MUtils.GetRandomString();
+            ICurrency currency = new MCurrency(name);
+            MEconomy.Instance.AddCurrency(currency);
 
-            Assert.That(DSEconomy.Instance[name].Name.Equals(name));
+            Assert.That(MEconomy.Instance[name].Name.Equals(name));
         }
 
         [Test]
         public void Currency_TrySpendReturnsFalse()
         {
-            var name = DSUtils.GetRandomString();
-            ICurrency currency = new DSCurrency(name);
+            var name = MUtils.GetRandomString();
+            ICurrency currency = new MCurrency(name);
 
             Assert.That(currency.TrySpend(1000) == false);
         }
@@ -41,8 +41,8 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Economy
         [Test]
         public void Currency_TrySpendResultsInZero()
         {
-            var name = DSUtils.GetRandomString();
-            ICurrency currency = new DSCurrency(name);
+            var name = MUtils.GetRandomString();
+            ICurrency currency = new MCurrency(name);
 
             currency.TrySpend(1000);
 
@@ -52,8 +52,8 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Economy
         [Test]
         public void Currency_AddNegative()
         {
-            var name = DSUtils.GetRandomString();
-            ICurrency currency = new DSCurrency(name);
+            var name = MUtils.GetRandomString();
+            ICurrency currency = new MCurrency(name);
 
             Assert.Throws<ArgumentException>(() => currency.Add(-1000));
             Assert.That(currency.Value == 0);
@@ -62,8 +62,8 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Economy
         [Test]
         public void Currency_TrySpendNegative()
         {
-            var name = DSUtils.GetRandomString();
-            ICurrency currency = new DSCurrency(name);
+            var name = MUtils.GetRandomString();
+            ICurrency currency = new MCurrency(name);
             currency.Add(2000);
 
             Assert.Throws<ArgumentException>(() => currency.TrySpend(-1000));
@@ -73,44 +73,44 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Economy
         [Test]
         public void Economy_RemoveCurrency()
         {
-            var name = DSUtils.GetRandomString();
-            ICurrency currency = new DSCurrency(name);
-            DSEconomy.Instance.AddCurrency(currency);
+            var name = MUtils.GetRandomString();
+            ICurrency currency = new MCurrency(name);
+            MEconomy.Instance.AddCurrency(currency);
 
-            DSEconomy.Instance.RemoveCurrency(currency);
+            MEconomy.Instance.RemoveCurrency(currency);
 
             Assert.Throws<KeyNotFoundException>(() =>
             {
-                var curr = DSEconomy.Instance[name];
+                var curr = MEconomy.Instance[name];
             });
         }
 
         [Test]
         public void Economy_RemoveCurrencyNotExisting()
         {
-            var name = DSUtils.GetRandomString();
-            ICurrency currency = new DSCurrency(name);
+            var name = MUtils.GetRandomString();
+            ICurrency currency = new MCurrency(name);
 
-            Assert.Throws<InvalidOperationException>(() => DSEconomy.Instance.RemoveCurrency(currency));
+            Assert.Throws<InvalidOperationException>(() => MEconomy.Instance.RemoveCurrency(currency));
         }
 
         [Test]
         public void Economy_AddCurrencyAlreadyExisting()
         {
-            var name = DSUtils.GetRandomString();
-            ICurrency currency = new DSCurrency(name);
-            DSEconomy.Instance.AddCurrency(currency);
-            Assert.Throws<InvalidOperationException>(() => DSEconomy.Instance.AddCurrency(currency));
+            var name = MUtils.GetRandomString();
+            ICurrency currency = new MCurrency(name);
+            MEconomy.Instance.AddCurrency(currency);
+            Assert.Throws<InvalidOperationException>(() => MEconomy.Instance.AddCurrency(currency));
         }
 
         [Test]
         public void Economy_AddCurrencyAlreadyExistingNonIdentical()
         {
-            var name = DSUtils.GetRandomString();
-            ICurrency currency = new DSCurrency(name);
-            ICurrency currency2 = new DSCurrency(name);
-            DSEconomy.Instance.AddCurrency(currency);
-            Assert.Throws<InvalidOperationException>(() => DSEconomy.Instance.AddCurrency(currency2));
+            var name = MUtils.GetRandomString();
+            ICurrency currency = new MCurrency(name);
+            ICurrency currency2 = new MCurrency(name);
+            MEconomy.Instance.AddCurrency(currency);
+            Assert.Throws<InvalidOperationException>(() => MEconomy.Instance.AddCurrency(currency2));
         }
     }
 }

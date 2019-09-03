@@ -1,14 +1,14 @@
-﻿using DwarvenSoftware.Framework.Events;
-using DwarvenSoftware.Framework.Utils;
+﻿using MetaLib.Events;
+using MetaLib.Utils;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace DwarvenSoftware.Framework.Editor.Tests.Events
+namespace MetaLib.Editor.Tests.Events
 {
     public class EventTests
     {
-        private class TestEvent : GameEvent
+        private class TestEvent : MetaEvent
         {
             public int Value { get; }
 
@@ -21,13 +21,13 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Events
         [Test]
         public void AddingEventListener()
         {
-            var category = DSUtils.GetRandomString();
-            DSEvents.Instance.AddEventsCategory(category);
+            var category = MUtils.GetRandomString();
+            MEvents.Instance.AddEventsCategory(category);
 
-            DSEvents.Instance[category].Raise(new TestEvent(0));
+            MEvents.Instance[category].Raise(new TestEvent(0));
             LogAssert.NoUnexpectedReceived();
-            DSEvents.Instance[category].Add<TestEvent>(TestEventListener);
-            DSEvents.Instance[category].Raise(new TestEvent(0));
+            MEvents.Instance[category].Add<TestEvent>(TestEventListener);
+            MEvents.Instance[category].Raise(new TestEvent(0));
             
             LogAssert.Expect(LogType.Log, "TestEvent0");
             LogAssert.NoUnexpectedReceived();
@@ -36,15 +36,15 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Events
         [Test]
         public void AddingEventListener_Multiple()
         {
-            var category = DSUtils.GetRandomString();
-            DSEvents.Instance.AddEventsCategory(category);
+            var category = MUtils.GetRandomString();
+            MEvents.Instance.AddEventsCategory(category);
 
-            DSEvents.Instance[category].Raise(new TestEvent(0));
+            MEvents.Instance[category].Raise(new TestEvent(0));
             LogAssert.NoUnexpectedReceived();
-            DSEvents.Instance[category].Add<TestEvent>(TestEventListener);
-            DSEvents.Instance[category].Add<TestEvent>(TestEventListener);
-            DSEvents.Instance[category].Add<TestEvent>(TestEventListener);
-            DSEvents.Instance[category].Raise(new TestEvent(0));
+            MEvents.Instance[category].Add<TestEvent>(TestEventListener);
+            MEvents.Instance[category].Add<TestEvent>(TestEventListener);
+            MEvents.Instance[category].Add<TestEvent>(TestEventListener);
+            MEvents.Instance[category].Raise(new TestEvent(0));
             
             LogAssert.Expect(LogType.Log, "TestEvent0");
             LogAssert.NoUnexpectedReceived();
@@ -53,13 +53,13 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Events
         [Test]
         public void RemovingEventListener()
         {
-            DSEvents.Add<TestEvent>(TestEventListener);
+            MEvents.Add<TestEvent>(TestEventListener);
 
-            DSEvents.RaiseEvent(new TestEvent(1));
+            MEvents.RaiseEvent(new TestEvent(1));
             LogAssert.Expect(LogType.Log, "TestEvent" + 1);
             
-            DSEvents.Remove<TestEvent>(TestEventListener);
-            DSEvents.RaiseEvent(new TestEvent(1));
+            MEvents.Remove<TestEvent>(TestEventListener);
+            MEvents.RaiseEvent(new TestEvent(1));
 
             LogAssert.NoUnexpectedReceived();
         }
@@ -67,17 +67,17 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Events
         [Test]
         public void RaisingEvent()
         {
-            DSEvents.Add<TestEvent>(TestEventListener);
-            DSEvents.RaiseEvent(new TestEvent(0));
+            MEvents.Add<TestEvent>(TestEventListener);
+            MEvents.RaiseEvent(new TestEvent(0));
             LogAssert.Expect(LogType.Log, "TestEvent0");
         }
 
         [Test]
         public void AddingEventCategory_Multiple()
         {
-            var name = DSUtils.GetRandomString();
-            DSEvents.Instance.AddEventsCategory(name);
-            DSEvents.Instance.AddEventsCategory(name);
+            var name = MUtils.GetRandomString();
+            MEvents.Instance.AddEventsCategory(name);
+            MEvents.Instance.AddEventsCategory(name);
             
             LogAssert.Expect(LogType.Log, $"Events category [{name}] already exists!");
         }

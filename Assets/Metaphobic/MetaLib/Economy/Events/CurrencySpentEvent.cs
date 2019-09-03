@@ -1,4 +1,4 @@
-namespace DwarvenSoftware.Framework.Economy.Events
+namespace MetaLib.Economy.Events
 {
     public class CurrencySpentEvent : CurrencyChangedEvent
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DwarvenSoftware.Framework.Tasks.Examples
+namespace MetaLib.Tasks.Examples
 {
     public class BasicTask : MonoBehaviour
     {

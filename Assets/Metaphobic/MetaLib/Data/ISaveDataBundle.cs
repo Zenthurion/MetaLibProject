@@ -1,10 +1,10 @@
 using System.Collections;
 
-namespace DwarvenSoftware.Framework.Data
+namespace MetaLib.Data
 {
     public interface ISaveDataBundle : IEnumerable
     {
         void AddData(object obj);
-        void RemoveData(object obj);
+        void RemoveData(object obj); 
     }
 }

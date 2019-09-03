@@ -1,4 +1,4 @@
-namespace DwarvenSoftware.Framework.Economy
+namespace MetaLib.Economy
 {
     public interface ICappedCurrency : ICurrency
     {

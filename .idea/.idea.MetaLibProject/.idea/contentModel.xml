@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Metaphobic\Projects\MetaLibProject" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Metaphobic" t="Include">
+          <e p="MetaLib" t="Include">
+            <e p="Achievements" t="Include">
+              <e p="IAchievement.cs" t="Include" />
+              <e p="MAchievement.cs" t="Include" />
+              <e p="MCompositeAchievement.cs" t="Include" />
+              <e p="MStatAchievement.cs" t="Include" />
+            </e>
+            <e p="Core" t="Include">
+              <e p="MBool.cs" t="Include" />
+              <e p="MetaBehaviour.cs" t="Include" />
+              <e p="MetaSingleton.cs" t="Include" />
+              <e p="MEvent.cs" t="Include" />
+              <e p="MFloat.cs" t="Include" />
+              <e p="MInt.cs" t="Include" />
+              <e p="MValue.cs" t="Include" />
+            </e>
+            <e p="Data" t="Include">
+              <e p="ILoadable.cs" t="Include" />
+              <e p="ISaveable.cs" t="Include" />
+              <e p="ISaveDataBundle.cs" t="Include" />
+              <e p="MData.cs" t="Include" />
+              <e p="SaveDataBundle.cs" t="Include" />
+            </e>
+            <e p="Economy" t="Include">
+              <e p="CappedCurrencyCapacity.cs" t="Include" />
+              <e p="CompositeCurrency.cs" t="Include" />
+              <e p="Events" t="Include">
+                <e p="CurrencyAddedEvent.cs" t="Include" />
+                <e p="CurrencyChangedEvent.cs" t="Include" />
+                <e p="CurrencyEvent.cs" t="Include" />
+                <e p="CurrencyInsufficientEvent.cs" t="Include" />
+                <e p="CurrencySpentEvent.cs" t="Include" />
+                <e p="UpgradableCurrencyUpgradeEvent.cs" t="Include" />
+                <e p="UpgradableCurrencyUpgradeFailedEvent.cs" t="Include" />
+                <e p="UpgradableCurrencyUpgradeSuccessEvent.cs" t="Include" />
+              </e>
+              <e p="ICappedCurrency.cs" t="Include" />
+              <e p="ICompositeCurrency.cs" t="Include" />
+              <e p="ICurrency.cs" t="Include" />
+              <e p="ICurrencyCapacity.cs" t="Include" />
+              <e p="ICurrencyCapacityProvider.cs" t="Include" />
+              <e p="IUpgradableCurrency.cs" t="Include" />
+              <e p="MCappedCurrency.cs" t="Include" />
+              <e p="MCurrency.cs" t="Include" />
+              <e p="MEconomy.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="Tests" t="Include">
+                <e p="Achievements" t="Include">
+                  <e p="AchievementsTestClasses.cs" t="Include" />
+                  <e p="CompositeAchievementTests.cs" t="Include" />
+                  <e p="StatAchievementTests.cs" t="Include" />
+                </e>
+                <e p="Economy" t="Include">
+                  <e p="CappedCurrencyTests.cs" t="Include" />
+                  <e p="CompositeCurrencyTests.cs" t="Include" />
+                  <e p="CurrencyEventTests.cs" t="Include" />
+                  <e p="CurrencyTests.cs" t="Include" />
+                  <e p="UpgradableCurrencyTests.cs" t="Include" />
+                </e>
+                <e p="Events" t="Include">
+                  <e p="EventTests.cs" t="Include" />
+                </e>
+                <e p="Inventory" t="Include">
+                  <e p="ListInventoryTests.cs" t="Include" />
+                  <e p="StorageCapacityProviderTests.cs" t="Include" />
+                  <e p="UniqueInventoryTests.cs" t="Include" />
+                </e>
+                <e p="Tasks" t="Include">
+                  <e p="TaskTests.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Events" t="Include">
+              <e p="DSEventsGroup.cs" t="Include" />
+              <e p="IEventsGroup.cs" t="Include" />
+              <e p="MEvents.cs" t="Include" />
+            </e>
+            <e p="FSM" t="Include">
+              <e p="Examples" t="Include">
+                <e p="SimpleStateExample.cs" t="Include" />
+              </e>
+              <e p="FiniteStateMachine.cs" t="Include" />
+              <e p="FSMBehaviour.cs" t="Include" />
+              <e p="IFiniteStateMachine.cs" t="Include" />
+              <e p="IState.cs" t="Include" />
+              <e p="ITransition.cs" t="Include" />
+              <e p="SimpleState.cs" t="Include" />
+              <e p="State.cs" t="Include" />
+              <e p="StatePhase.cs" t="Include" />
+              <e p="Transition.cs" t="Include" />
+            </e>
+            <e p="Interaction" t="Include">
+              <e p="IHighlightable.cs" t="Include" />
+              <e p="ISelectable.cs" t="Include" />
+              <e p="MetaSelections.cs" t="Include" />
+            </e>
+            <e p="Inventory" t="Include">
+              <e p="IInventory.cs" t="Include" />
+              <e p="IInventoryItem.cs" t="Include" />
+              <e p="IInventoryStack.cs" t="Include" />
+              <e p="InventoryItem.cs" t="Include" />
+              <e p="InventoryStack.cs" t="Include" />
+              <e p="IStorageCapacityProvider.cs" t="Include" />
+              <e p="MCompositeStorageCapacityProvider.cs" t="Include" />
+              <e p="MInventory.cs" t="Include" />
+              <e p="MListInventory.cs" t="Include" />
+              <e p="MSimpleStorageCapacityProvider.cs" t="Include" />
+              <e p="MUniqueInventory.cs" t="Include" />
+              <e p="TransactionResult.cs" t="Include" />
+            </e>
+            <e p="Objectives" t="Include">
+              <e p="IObjective.cs" t="Include" />
+            </e>
+            <e p="Quests" t="Include">
+              <e p="IQuest.cs" t="Include" />
+            </e>
+            <e p="Tasks" t="Include">
+              <e p="Examples" t="Include">
+                <e p="BasicTask.cs" t="Include" />
+                <e p="TimedTask.cs" t="Include" />
+              </e>
+              <e p="ITask.cs" t="Include" />
+              <e p="ITaskStack.cs" t="Include" />
+              <e p="MTask.cs" t="Include" />
+              <e p="MTaskStack.cs" t="Include" />
+              <e p="MTimerTask.cs" t="Include" />
+            </e>
+            <e p="test.txt" t="Include" />
+            <e p="Utils" t="Include">
+              <e p="MTimer.cs" t="Include" />
+              <e p="MUtils.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Sirenix" t="Include">
+            <e p="Assemblies" t="Include">
+              <e p="link.xml" t="Include" />
+              <e p="Sirenix.OdinInspector.Attributes.xml" t="Include" />
+              <e p="Sirenix.OdinInspector.Editor.xml" t="Include" />
+              <e p="Sirenix.Serialization.Config.xml" t="Include" />
+              <e p="Sirenix.Utilities.Editor.xml" t="Include" />
+              <e p="Sirenix.Utilities.xml" t="Include" />
+            </e>
+            <e p="Demos" t="Include">
+              <e p="Sample - RPG Editor" t="Include">
+                <e p="Icons" t="Include">
+                  <e p="icons_by_ravenmore.txt" t="Include" />
+                </e>
+                <e p="Scripts" t="Include">
+                  <e p="Character" t="Include">
+                    <e p="Character.cs" t="Include" />
+                    <e p="CharacterAlignment.cs" t="Include" />
+                    <e p="CharacterEquipment.cs" t="Include" />
+                    <e p="CharacterOverview.cs" t="Include" />
+                    <e p="CharacterStats.cs" t="Include" />
+                  </e>
+                  <e p="Editor" t="Include">
+                    <e p="CharacterTable.cs" t="Include" />
+                    <e p="ItemDrawer.cs" t="Include" />
+                    <e p="ItemSlotCellDrawer.cs" t="Include" />
+                    <e p="RPGEditorWindow.cs" t="Include" />
+                    <e p="ScriptableObjectCreator.cs" t="Include" />
+                  </e>
+                  <e p="Items" t="Include">
+                    <e p="Armor.cs" t="Include" />
+                    <e p="ConsumableItem.cs" t="Include" />
+                    <e p="EquipableItem.cs" t="Include" />
+                    <e p="Item.cs" t="Include" />
+                    <e p="ItemTypes.cs" t="Include" />
+                    <e p="WeaponItem.cs" t="Include" />
+                  </e>
+                  <e p="Misc" t="Include">
+                    <e p="ItemSlot.cs" t="Include" />
+                    <e p="StatList.cs" t="Include" />
+                    <e p="StatType.cs" t="Include" />
+                    <e p="StatValue.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="Odin Inspector" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="AssemblyImportSettingsAutomation.cs" t="Include" />
+                  <e p="BuildAOTAutomation.cs" t="Include" />
+                  <e p="EnsureOdinInspectorDefine.cs" t="Include" />
+                  <e p="FixBrokenUnityObjectWrapperDrawer.cs" t="Include" />
+                  <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.asmdef" t="Include" />
+                  <e p="SyncListDrawer.cs" t="Include" />
+                  <e p="SyncVarAttributeDrawer.cs" t="Include" />
+                  <e p="Vector2IntMinMaxAttributeDrawer.cs" t="Include" />
+                  <e p="VectorIntDrawers.cs" t="Include" />
+                  <e p="VectorIntPropertyResolvers.cs" t="Include" />
+                </e>
+                <e p="SerializedNetworkBehaviour.cs" t="Include" />
+                <e p="Sirenix.OdinInspector.CompatibilityLayer.asmdef" t="Include" />
+                <e p="VectorIntFormatters.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Readme.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="MetaLibProject.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.csproj" t="IncludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj" t="IncludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\marku\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\marku\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_MetaLibProject.-940844671.00" t="ExcludeRecursive" />
+  </component>
+</project>

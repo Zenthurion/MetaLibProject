@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using JetBrains.Annotations;
 
-namespace DwarvenSoftware.Framework.Inventory
+namespace MetaLib.Inventory
 {
     public interface IInventory
     {

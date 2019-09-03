@@ -1,4 +1,4 @@
-namespace DwarvenSoftware.Framework.Inventory
+namespace MetaLib.Inventory
 {
     public class InventoryStack : InventoryItem, IInventoryStack
     {

@@ -1,22 +1,22 @@
-using DwarvenSoftware.Framework.Economy;
-using DwarvenSoftware.Framework.Economy.Events;
-using DwarvenSoftware.Framework.Events;
-using DwarvenSoftware.Framework.Utils;
+using MetaLib.Economy;
+using MetaLib.Economy.Events;
+using MetaLib.Events;
+using MetaLib.Utils;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace DwarvenSoftware.Framework.Editor.Tests.Economy
+namespace MetaLib.Editor.Tests.Economy
 {
     public class CurrencyEventTests
     {
         [Test]
         public void CurrencyEvent_CurrencyAdded()
         {
-            var name = DSUtils.GetRandomString();
-            ICurrency currency = new DSCurrency(name);
+            var name = MUtils.GetRandomString();
+            ICurrency currency = new MCurrency(name);
             
-            DSEvents.Add(new DSEvents.EventDelegate<CurrencyAddedEvent>(e => Debug.Log(e.Currency.Name)));
+            MEvents.Add(new MEvents.EventDelegate<CurrencyAddedEvent>(e => Debug.Log(e.Currency.Name)));
             
             currency.Add(5);
             
@@ -26,10 +26,10 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Economy
         [Test]
         public void CurrencyEvent_CurrencySpent()
         {
-            var name = DSUtils.GetRandomString();
-            ICurrency currency = new DSCurrency(name);
+            var name = MUtils.GetRandomString();
+            ICurrency currency = new MCurrency(name);
             
-            DSEvents.Add(new DSEvents.EventDelegate<CurrencySpentEvent>((e => {Debug.Log(e.Amount);})));
+            MEvents.Add(new MEvents.EventDelegate<CurrencySpentEvent>((e => {Debug.Log(e.Amount);})));
             
             currency.Add(5);
             currency.TrySpend(2);
@@ -40,10 +40,10 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Economy
         [Test]
         public void CurrencyEvent_CurrencyInsufficient()
         {
-            var name = DSUtils.GetRandomString();
-            ICurrency currency = new DSCurrency(name);
+            var name = MUtils.GetRandomString();
+            ICurrency currency = new MCurrency(name);
             
-            DSEvents.Add(new DSEvents.EventDelegate<CurrencyInsufficientEvent>((e => {Debug.Log(e.AmountAttempted);})));
+            MEvents.Add(new MEvents.EventDelegate<CurrencyInsufficientEvent>((e => {Debug.Log(e.AmountAttempted);})));
             
             currency.Add(5);
             currency.TrySpend(7);
@@ -54,11 +54,11 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Economy
         [Test]
         public void CurrencyEvent_UpgradableCurrencyUpgraded()
         {
-            var name = DSUtils.GetRandomString();
+            var name = MUtils.GetRandomString();
             var capacity = new CappedCurrencyCapacity(5, 10);
-            IUpgradableCurrency currency = new DSCappedCurrency(name, capacity);
+            IUpgradableCurrency currency = new MCappedCurrency(name, capacity);
             
-            DSEvents.Add(new DSEvents.EventDelegate<UpgradableCurrencyUpgradeSuccessEvent>((e => {Debug.Log(e.Currency.Name);})));
+            MEvents.Add(new MEvents.EventDelegate<UpgradableCurrencyUpgradeSuccessEvent>((e => {Debug.Log(e.Currency.Name);})));
 
             currency.TryUpgradeCapacity();
             
@@ -68,11 +68,11 @@ namespace DwarvenSoftware.Framework.Editor.Tests.Economy
         [Test]
         public void CurrencyEvent_UpgradableCurrencyUpgradeFailed()
         {
-            var name = DSUtils.GetRandomString();
+            var name = MUtils.GetRandomString();
             var capacity = new CappedCurrencyCapacity(5, 10);
-            IUpgradableCurrency currency = new DSCappedCurrency(name, capacity);
+            IUpgradableCurrency currency = new MCappedCurrency(name, capacity);
             
-            DSEvents.Add(new DSEvents.EventDelegate<UpgradableCurrencyUpgradeFailedEvent>((e => {Debug.Log("Upgrade Failed");})));
+            MEvents.Add(new MEvents.EventDelegate<UpgradableCurrencyUpgradeFailedEvent>((e => {Debug.Log("Upgrade Failed");})));
 
             currency.TryUpgradeCapacity();
             currency.TryUpgradeCapacity();

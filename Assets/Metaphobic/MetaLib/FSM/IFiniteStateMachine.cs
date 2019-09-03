@@ -1,4 +1,4 @@
-namespace DwarvenSoftware.Framework.FSM
+namespace MetaLib.FSM
 {
     public delegate void StateChangeEvent(IState newState, IState previousState);
     public interface IFiniteStateMachine

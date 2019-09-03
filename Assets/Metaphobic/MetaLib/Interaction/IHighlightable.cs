@@ -1,11 +1,11 @@
-using DwarvenSoftware.Framework.Core;
+using MetaLib.Core;
 
-namespace DwarvenSoftware.Framework.Interaction
+namespace MetaLib.Interaction
 {
     public interface IHighlightable
     {
-        event DSEvent<IHighlightable> OnHighlight;
-        event DSEvent<IHighlightable> OnUnhighlight;
+        event MEvent<IHighlightable> OnHighlight;
+        event MEvent<IHighlightable> OnUnhighlight;
 
         void Highlight();
         void Unhighlight();

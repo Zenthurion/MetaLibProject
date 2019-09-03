@@ -1,8 +1,8 @@
-using DwarvenSoftware.Framework.Economy;
+using MetaLib.Economy;
 using NSubstitute;
 using NUnit.Framework;
 
-namespace DwarvenSoftware.Framework.Editor.Tests.Economy
+namespace MetaLib.Editor.Tests.Economy
 {
     public class CompositeCurrencyTests
     {

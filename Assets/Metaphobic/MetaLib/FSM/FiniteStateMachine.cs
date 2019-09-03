@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DwarvenSoftware.Framework.FSM
+namespace MetaLib.FSM
 {
     public class FiniteStateMachine : IFiniteStateMachine
     {

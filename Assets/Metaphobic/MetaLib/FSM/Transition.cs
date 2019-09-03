@@ -1,6 +1,6 @@
 using System;
 
-namespace DwarvenSoftware.Framework.FSM
+namespace MetaLib.FSM
 {
     public class Transition : ITransition
     {

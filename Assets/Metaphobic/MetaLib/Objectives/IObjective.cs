@@ -1,4 +1,4 @@
-namespace DwarvenSoftware.Framework.Objectives
+namespace MetaLib.Objectives
 {
     public interface IObjective
     {

@@ -1,4 +1,4 @@
-namespace DwarvenSoftware.Framework.Tasks
+namespace MetaLib.Tasks
 {
     public interface ITaskStack
     {
